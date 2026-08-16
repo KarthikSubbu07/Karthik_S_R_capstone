@@ -38,9 +38,20 @@ htmlcov/
 .cache
 .pytest_cache/
 
+
 # IDE / Editor specific configurations
 .vscode/
 .idea/
+.claude/
+.claude
+
+# Ignore local environment logs
+.local/
+
+# Secure and ignore SSH keys
+.ssh/
+.npm/
+
 
 ## Files
 sample1.py

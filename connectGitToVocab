@@ -1,0 +1,66 @@
+Step-by-Step 
+Fix1. 
+Check for Existing Keys
+Open your terminal and run:
+ls -al ~/.ssh
+Look for files named id_ed25519.pub or id_rsa.pub. 
+If you see one, skip to Step 3.
+
+If u dont see do step2
+Step2. 
+First check ur configured email id using below command in terminal
+git config --global user.email
+Save this
+
+Next
+Generate a New SSH Key
+If no keys exist, run this command (replace with your GitHub email):
+ssh-keygen -t ed25519 -C "your_email@example.com"
+Press Enter to accept the default file location.
+Enter a secure passphrase (optional, press Enter to skip).
+
+3. Add Key to SSH Agent
+Start the background agent and register your key:
+Mac/Linux: eval "$(ssh-agent -s)"
+Mac Only: ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+Windows/Linux: ssh-add ~/.ssh/id_ed255194. 
+
+Link Key to GitHub
+Copy the public key text to your clipboard:
+Mac: pbcopy < ~/.ssh/id_ed25519.pub
+Windows (Git Bash): cat ~/.ssh/id_ed25519.pub | clipLinux: cat ~/.ssh/id_ed25519.pub (then manually copy the output)
+
+Go to GitHub → Settings → SSH and GPG keys → New SSH Key. 
+Paste the text and save.
+
+5. Test connection
+Run in terminal
+ssh -T git@github.com
+Type yes if prompted about host authenticity.
+
+---
+1. Add Key to Your Local SSH Agent
+Run the following commands to ensure your operating system uses the key automatically:
+For Mac / Linux:eval "$(ssh-agent -s)"ssh-add ~/.ssh/id_ed25519 (If you on Mac, use ssh-add --apple-use-keychain ~/.ssh/id_ed25519 instead)
+For Windows (Git Bash):eval "$(ssh-agent -s)"ssh-add ~/.ssh/id_ed25519
+
+2. Copy the Public Key Text
+You need to copy the contents of the public file (.pub). 
+Run the command for your system to copy it instantly to your clipboard:
+Windows (Git Bash): cat ~/.ssh/id_ed25519.pub | clipMac: pbcopy < ~/.ssh/id_ed25519.pub
+Linux: cat ~/.ssh/id_ed25519.pub (Select the printed text from the terminal and copy it)
+
+3. Add to GitHub Settings
+Open your browser and go to your GitHub SSH Keys Settings.
+Click the green New SSH Key button in the top right.
+Give it a Title (like "My Laptop").
+Keep the Key type as Authentication Key.
+Paste your copied text into the Key box.
+Click Add SSH Key.
+
+4. Test the Connection
+Verify it works by running this command in your terminal:
+ssh -T git@github.com
+
+If prompted with a warning about "authenticity of host", type yes and press Enter. 
+You should see a success message containing your username

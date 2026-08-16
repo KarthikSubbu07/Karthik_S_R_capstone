@@ -1,0 +1,28 @@
+2026-08-16 04:24:05.887 [info] Telemetry level is off
+2026-08-16 04:24:05.887 [info] Experiments are disabled, only manually opted experiments are active.
+2026-08-16 04:24:05.887 [warning] Dir "/voc/work/.pixi/envs" is not watchable (directory does not exist)
+2026-08-16 04:24:05.887 [info] Starting Environment refresh
+2026-08-16 04:24:05.887 [info] Skipping ActivatedEnv Detection:  process.env.VSCODE_CLI !== '1'
+2026-08-16 04:24:05.887 [info] > hatch env show --json
+2026-08-16 04:24:05.887 [info] cwd: .
+2026-08-16 04:24:05.887 [info] Python interpreter path: ./.venv/bin/python
+2026-08-16 04:24:05.892 [info] > ./.venv/bin/python -I /usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/get_output_via_markers.py /usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/python_files/interpreterInfo.py
+2026-08-16 04:24:05.912 [info] Environments refresh paths discovered: 51 milliseconds
+2026-08-16 04:24:05.917 [info] Environments refresh finished (event): 56 milliseconds
+2026-08-16 04:24:05.920 [info] Environment refresh took 59 milliseconds
+2026-08-16 04:24:06.655 [info] > pyenv which python
+2026-08-16 04:24:06.655 [info] cwd: .
+2026-08-16 04:24:07.356 [info] Starting Jedi language server for work.
+2026-08-16 04:24:31.569 [info] > conda info --json
+2026-08-16 04:24:35.021 [info] Send text to terminal: source /voc/work/.venv/bin/activate
+2026-08-16 04:24:35.308 [info] CreateEnv Trigger - Skipping for /voc/work/hello_llm copy.py
+2026-08-16 04:24:36.023 [info] Send text to terminal: /voc/work/.venv/bin/python "/voc/work/hello_llm copy.py"
+2026-08-16 08:03:43.582 [info] Telemetry level is off
+2026-08-16 08:03:43.582 [info] Experiments are disabled, only manually opted experiments are active.
+2026-08-16 08:03:43.582 [warning] Dir "/voc/work/.pixi/envs" is not watchable (directory does not exist)
+2026-08-16 08:03:43.582 [info] Skipping ActivatedEnv Detection:  process.env.VSCODE_CLI !== '1'
+2026-08-16 08:03:43.582 [info] > conda info --json
+2026-08-16 08:03:43.582 [info] Python interpreter path: ./.venv/bin/python
+2026-08-16 08:03:43.834 [info] > pyenv which python
+2026-08-16 08:03:43.834 [info] cwd: .
+2026-08-16 08:03:45.901 [info] Starting Jedi language server for work.

@@ -1,0 +1,17 @@
+2026-08-09 11:26:30.348 [info] semantic_tokens_range file:///voc/work/hello_llm.py 0:0-20:17
+2026-08-09 11:26:30.398 [info] semantic_tokens_full file:///voc/work/hello_llm.py 
+2026-08-09 11:26:32.427 [info] [Debug - 11:26:32 AM] no definitions found for name "completions" of type 'statement' (10:23)
+2026-08-09 11:26:32.432 [info] [Debug - 11:26:32 AM] no definitions found for name "create" of type 'statement' (10:35)
+2026-08-09 11:26:32.438 [info] [Debug - 11:26:32 AM] no definitions found for name "model" of type 'statement' (11:8)
+2026-08-09 11:26:32.444 [info] [Debug - 11:26:32 AM] no definitions found for name "messages" of type 'statement' (12:8)
+2026-08-09 11:26:32.450 [info] [Debug - 11:26:32 AM] no definitions found for name "choices" of type 'statement' (17:16)
+2026-08-09 11:26:32.466 [info] [Debug - 11:26:32 AM] no definitions found for name "message" of type 'statement' (17:27)
+2026-08-09 11:26:32.471 [info] [Debug - 11:26:32 AM] no definitions found for name "content" of type 'statement' (17:35)
+2026-08-09 11:26:32.476 [info] [Debug - 11:26:32 AM] no matching semantic token for "__name__" of type 'statement' (19:3)
+2026-08-09 11:26:32.663 [info] ERROR:pygls.protocol.json_rpc:Exception occurred for message "5": ValueError: not enough values to unpack (expected 1, got 0)
+NoneType: None
+
+2026-08-09 11:26:32.664 [info] [Error - 11:26:32 AM] Request textDocument/semanticTokens/full failed.
+2026-08-09 11:26:32.667 [info]   Message: ValueError: not enough values to unpack (expected 1, got 0)
+  Code: -32603 
+[object Object]

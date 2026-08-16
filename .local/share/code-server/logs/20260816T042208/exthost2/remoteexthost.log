@@ -1,0 +1,134 @@
+2026-08-16 04:24:04.745 [info] Extension host with pid 554 started
+2026-08-16 04:24:04.745 [error] Error: EEXIST: file already exists, open '/voc/work/.local/share/code-server/User/workspaceStorage/-6a181c40/vscode.lock'
+2026-08-16 04:24:04.745 [info] Lock '/voc/work/.local/share/code-server/User/workspaceStorage/-6a181c40/vscode.lock': Could not acquire lock, checking if the file is stale.
+2026-08-16 04:24:04.745 [info] Lock '/voc/work/.local/share/code-server/User/workspaceStorage/-6a181c40/vscode.lock': The lock does not look stale, elapsed: 102 ms, giving up.
+2026-08-16 04:24:04.756 [info] Lock '/voc/work/.local/share/code-server/User/workspaceStorage/-6a181c40-1/vscode.lock': Lock acquired.
+2026-08-16 04:24:05.103 [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag, startup: true, activationEvent: '*'
+2026-08-16 04:24:05.104 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-08-16 04:24:05.107 [info] ExtensionService#_doActivateExtension synedra.auto-run-command, startup: true, activationEvent: '*'
+2026-08-16 04:24:05.115 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:.venv'
+2026-08-16 04:24:05.530 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-08-16 04:24:05.530 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-08-16 04:24:06.062 [info] Eager extensions activated
+2026-08-16 04:24:06.063 [info] ExtensionService#_doActivateExtension Anthropic.claude-code, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 04:24:06.063 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 04:24:06.066 [info] ExtensionService#_doActivateExtension cweijan.vscode-database-client2, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 04:24:06.066 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 04:24:06.070 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 04:24:06.070 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 04:24:06.070 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 04:24:06.074 [info] ExtensionService#_doActivateExtension ms-dotnettools.vscode-dotnet-runtime, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 04:24:07.398 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2026-08-16 04:24:07.622 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-08-16 04:24:07.623 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-08-16 04:24:07.626 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-08-16 04:24:07.626 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-08-16 04:24:07.793 [warning] DiagnosticCollection with name 'eslint' does already exist.
+2026-08-16 04:24:07.913 [error] Error: Extension dbclient-jdbc not found!
+	at r.upgradeJDBC (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:177276:13)
+	at r.initTreeView (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:187998:8)
+	at r.init (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:187995:52)
+	at _Lr (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:188948:10)
+	at vy.kb (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:15342)
+	at vy.jb (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:15087)
+	at file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:13245
+	at async Lb.n (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:112:13382)
+	at async Lb.m (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:112:13345)
+	at async Lb.l (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:112:12801)
+2026-08-16 04:24:31.017 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+2026-08-16 04:24:31.018 [info] ExtensionService#_doActivateExtension ms-toolsai.tensorboard, startup: false, activationEvent: 'onLanguage:python'
+2026-08-16 04:24:31.528 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter-renderers, startup: false, activationEvent: 'api', root cause: ms-toolsai.jupyter
+2026-08-16 04:24:36.485 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2026-08-16 04:27:44.402 [error] [ms-python.python] provider FAILED
+2026-08-16 04:27:44.403 [error] Error: _pickle.UnpicklingError: invalid load key, ':'.
+	at ae (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2013311)
+	at oe (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2011271)
+	at Immediate.<anonymous> (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2007565)
+	at process.processImmediate (node:internal/timers:485:21)
+2026-08-16 04:27:44.409 [error] [ms-python.python] provider FAILED
+2026-08-16 04:27:44.412 [error] Error: _pickle.UnpicklingError: invalid load key, ' '.
+	at ae (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2013311)
+	at oe (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2011271)
+	at Immediate.<anonymous> (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2007565)
+	at process.processImmediate (node:internal/timers:485:21)
+2026-08-16 04:27:44.452 [error] [ms-python.python] provider FAILED
+2026-08-16 04:27:44.452 [error] Error: _pickle.UnpicklingError: invalid load key, ' '.
+	at ae (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2013311)
+	at oe (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2011271)
+	at Immediate.<anonymous> (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2007565)
+	at process.processImmediate (node:internal/timers:485:21)
+2026-08-16 04:27:46.026 [error] [ms-python.python] provider FAILED
+2026-08-16 04:27:46.026 [error] Error: _pickle.UnpicklingError: invalid load key, ' '.
+	at ae (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2013311)
+	at oe (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2011271)
+	at Immediate.<anonymous> (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2007565)
+	at process.processImmediate (node:internal/timers:485:21)
+2026-08-16 04:27:46.819 [error] [ms-python.python] provider FAILED
+2026-08-16 04:27:46.819 [error] Error: _pickle.UnpicklingError: invalid load key, ' '.
+	at ae (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2013311)
+	at oe (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2011271)
+	at Immediate.<anonymous> (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/ms-python.python-2025.12.0/out/client/extension.js:2:2007565)
+	at process.processImmediate (node:internal/timers:485:21)
+2026-08-16 04:27:54.224 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2026-08-16 04:27:54.224 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2026-08-16 04:27:55.046 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2026-08-16 07:48:17.884 [warning] [Decorations] CAPPING events from decorations provider vscode.git 368
+2026-08-16 07:48:18.085 [warning] [Decorations] CAPPING events from decorations provider vscode.git 368
+2026-08-16 07:53:54.917 [info] Extension host terminating: renderer disconnected for too long (2)
+2026-08-16 07:53:54.919 [info] Lock '/voc/work/.local/share/code-server/User/workspaceStorage/-6a181c40-1/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2026-08-16 07:53:54.960 [info] Extension host with pid 554 exiting with code 0
+2026-08-16 08:03:41.718 [info] Extension host with pid 76501 started
+2026-08-16 08:03:41.727 [info] Lock '/voc/work/.local/share/code-server/User/workspaceStorage/-6a181c40/vscode.lock': Lock acquired.
+2026-08-16 08:03:42.074 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2026-08-16 08:03:42.075 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: 'onCommand:vscode-html-css.validate'
+2026-08-16 08:03:42.077 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-08-16 08:03:42.078 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-08-16 08:03:42.078 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-08-16 08:03:42.081 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-08-16 08:03:42.082 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+2026-08-16 08:03:42.082 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+2026-08-16 08:03:42.085 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2026-08-16 08:03:42.085 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2026-08-16 08:03:42.089 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2026-08-16 08:03:43.111 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter-renderers, startup: false, activationEvent: 'api', root cause: ms-toolsai.jupyter
+2026-08-16 08:03:43.120 [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag, startup: true, activationEvent: '*'
+2026-08-16 08:03:43.120 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-08-16 08:03:43.124 [info] ExtensionService#_doActivateExtension synedra.auto-run-command, startup: true, activationEvent: '*'
+2026-08-16 08:03:43.463 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-08-16 08:03:43.463 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-08-16 08:03:43.529 [info] ExtensionService#_doActivateExtension ms-toolsai.tensorboard, startup: false, activationEvent: 'onLanguage:python'
+2026-08-16 08:03:43.694 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2026-08-16 08:03:43.995 [info] Eager extensions activated
+2026-08-16 08:03:43.996 [info] ExtensionService#_doActivateExtension Anthropic.claude-code, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 08:03:43.999 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 08:03:43.999 [info] ExtensionService#_doActivateExtension cweijan.vscode-database-client2, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 08:03:44.002 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 08:03:44.005 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 08:03:44.006 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 08:03:44.006 [info] ExtensionService#_doActivateExtension ms-dotnettools.vscode-dotnet-runtime, startup: false, activationEvent: 'onStartupFinished'
+2026-08-16 08:03:44.917 [warning] [Decorations] CAPPING events from decorations provider vscode.git 374
+2026-08-16 08:03:45.268 [warning] [Decorations] CAPPING events from decorations provider vscode.git 374
+2026-08-16 08:03:45.480 [warning] DiagnosticCollection with name 'eslint' does already exist.
+2026-08-16 08:03:46.224 [error] Error: Extension dbclient-jdbc not found!
+	at r.upgradeJDBC (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:177276:13)
+	at r.initTreeView (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:187998:8)
+	at r.init (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:187995:52)
+	at _Lr (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:188948:10)
+	at vy.kb (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:15342)
+	at vy.jb (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:15087)
+	at file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:13245
+	at async Lb.n (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:112:13382)
+	at async Lb.m (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:112:13345)
+	at async Lb.l (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:112:12801)
+2026-08-16 08:04:03.386 [warning] [Decorations] CAPPING events from decorations provider vscode.git 382
+2026-08-16 08:04:03.584 [warning] [Decorations] CAPPING events from decorations provider vscode.git 382
+2026-08-16 08:04:08.820 [warning] [Decorations] CAPPING events from decorations provider vscode.git 382
+2026-08-16 08:04:31.581 [warning] [Decorations] CAPPING events from decorations provider vscode.git 382
+2026-08-16 08:05:09.589 [warning] [Decorations] CAPPING events from decorations provider vscode.git 380
+2026-08-16 08:05:22.606 [warning] [Decorations] CAPPING events from decorations provider vscode.git 380
+2026-08-16 08:06:14.715 [warning] [Decorations] CAPPING events from decorations provider vscode.git 380
+2026-08-16 08:06:19.952 [warning] [Decorations] CAPPING events from decorations provider vscode.git 380
+2026-08-16 08:06:47.598 [warning] [Decorations] CAPPING events from decorations provider vscode.git 380
+2026-08-16 08:07:17.324 [warning] [Decorations] CAPPING events from decorations provider vscode.git 381
+2026-08-16 08:07:47.910 [warning] [Decorations] CAPPING events from decorations provider vscode.git 383
+2026-08-16 08:07:52.994 [warning] [Decorations] CAPPING events from decorations provider vscode.git 384

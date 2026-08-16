@@ -1,0 +1,44 @@
+2026-08-15 11:47:28.085 [info] Extension host with pid 77 started
+2026-08-15 11:47:28.093 [info] Lock '/voc/work/.local/share/code-server/User/workspaceStorage/547797a3/vscode.lock': Lock acquired.
+2026-08-15 11:47:28.446 [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag, startup: true, activationEvent: '*'
+2026-08-15 11:47:28.447 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-08-15 11:47:28.447 [info] ExtensionService#_doActivateExtension synedra.auto-run-command, startup: true, activationEvent: '*'
+2026-08-15 11:47:28.455 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:.venv'
+2026-08-15 11:47:28.894 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-08-15 11:47:28.894 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-08-15 11:47:29.399 [info] Eager extensions activated
+2026-08-15 11:47:29.399 [info] ExtensionService#_doActivateExtension Anthropic.claude-code, startup: false, activationEvent: 'onStartupFinished'
+2026-08-15 11:47:29.400 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2026-08-15 11:47:29.400 [info] ExtensionService#_doActivateExtension cweijan.vscode-database-client2, startup: false, activationEvent: 'onStartupFinished'
+2026-08-15 11:47:29.400 [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+2026-08-15 11:47:29.400 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-08-15 11:47:29.400 [info] ExtensionService#_doActivateExtension ecmel.vscode-html-css, startup: false, activationEvent: 'onStartupFinished'
+2026-08-15 11:47:29.401 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-08-15 11:47:29.401 [info] ExtensionService#_doActivateExtension ms-dotnettools.vscode-dotnet-runtime, startup: false, activationEvent: 'onStartupFinished'
+2026-08-15 11:47:31.072 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-08-15 11:47:31.072 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-08-15 11:47:31.075 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2026-08-15 11:47:31.075 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-08-15 11:47:31.247 [warning] DiagnosticCollection with name 'eslint' does already exist.
+2026-08-15 11:47:31.282 [error] Error: Extension dbclient-jdbc not found!
+	at r.upgradeJDBC (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:177276:13)
+	at r.initTreeView (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:187998:8)
+	at r.init (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:187995:52)
+	at _Lr (/usr/local/lib/code-server-4.103.2/lib/vscode/extensions/cweijan.vscode-database-client2-8.4.0/out/extension.js:188948:10)
+	at vy.kb (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:15342)
+	at vy.jb (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:15087)
+	at file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:116:13245
+	at async Lb.n (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:112:13382)
+	at async Lb.m (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:112:13345)
+	at async Lb.l (file:///usr/local/lib/code-server-4.103.2/lib/vscode/out/vs/workbench/api/node/extensionHostProcess.js:112:12801)
+2026-08-15 11:48:24.010 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2026-08-15 11:52:49.095 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2026-08-15 11:52:49.096 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2026-08-15 11:52:50.187 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2026-08-15 11:54:14.998 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+2026-08-15 11:54:15.000 [info] ExtensionService#_doActivateExtension ms-toolsai.tensorboard, startup: false, activationEvent: 'onLanguage:python'
+2026-08-15 11:54:15.542 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter-renderers, startup: false, activationEvent: 'api', root cause: ms-toolsai.jupyter
+2026-08-15 11:54:20.463 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2026-08-15 12:02:50.570 [info] Extension host terminating: received terminate message from renderer
+2026-08-15 12:02:50.571 [info] Lock '/voc/work/.local/share/code-server/User/workspaceStorage/547797a3/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2026-08-15 12:02:50.618 [info] Extension host with pid 77 exiting with code 0

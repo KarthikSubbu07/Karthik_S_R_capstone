@@ -1,0 +1,49 @@
+.env
+.env.local
+.env.*
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+
+# Testing and coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+.pytest_cache/
+
+# IDE / Editor specific configurations
+.vscode/
+.idea/
+
+## Files
+/voc/work/sample1.py
+/voc/work/sample2.py
+sample1.py
+sample1.py

@@ -12,7 +12,7 @@ def ask(question):
         messages=[
             {"role": "system", "content": "You are concise."},
             {"role": "user",   "content": question},
-        ],
+            ]
     )
     return resp.choices[0].message.content
 

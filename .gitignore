@@ -3,3 +3,8 @@ node_modules/
 .DS_Store
 .ssh/
 /.ssh/
+.cache/
+.claude
+.npm/
+/.cache/
+/.local/

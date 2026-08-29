@@ -80,3 +80,9 @@ File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/
 [08:03:44] RequestStore#acceptReply was called without receiving a matching request 88
 File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
 File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda.js
+[17:51:05] [172.16.3.65][e894f8e3][ManagementConnection] Unknown reconnection token (seen before).
+File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
+File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda.js
+File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
+File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
+File not found: /usr/local/lib/code-server-4.103.2/lib/vscode/node_modules/vsda/rust/web/vsda.js

@@ -47,12 +47,10 @@ htmlcov/
 
 # Ignore local environment logs
 .local/
+.local
 
 # Secure and ignore SSH keys
 .ssh/
 .npm/
 
-
 ## Files
-sample1.py
-sample2.py

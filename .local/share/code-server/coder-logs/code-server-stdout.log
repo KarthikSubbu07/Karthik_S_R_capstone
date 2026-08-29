@@ -206,3 +206,113 @@
 [15:49:58] [172.16.3.65][e894f8e3][ManagementConnection] New connection established.
 [15:50:01] [172.16.3.65][db114556][ExtensionHostConnection] New connection established.
 [15:50:01] [172.16.3.65][db114556][ExtensionHostConnection] <91> Launched Extension Host Process.
+[16:47:49] [172.16.3.65][e894f8e3][ManagementConnection] The client has reconnected.
+[16:54:37] [172.16.3.65][db114556][ExtensionHostConnection] The client has reconnected.
+[16:54:37] [172.16.3.65][e894f8e3][ManagementConnection] The client has reconnected.
+[16:56:24] [172.16.3.65][e894f8e3][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[17:12:47] [172.16.3.65][e894f8e3][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[17:12:47] [172.16.3.65][db114556][ExtensionHostConnection] The client has reconnected.
+[17:12:57] [172.16.3.65][e894f8e3][ManagementConnection] The client has reconnected.
+[17:16:46] [172.16.3.65][e894f8e3][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[17:29:43] [172.16.3.65][e894f8e3][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[17:29:43] [172.16.3.65][e894f8e3][ManagementConnection] The client has reconnected.
+[17:29:44] [172.16.3.65][db114556][ExtensionHostConnection] The client has reconnected.
+[17:33:24] [172.16.3.65][e894f8e3][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[17:33:38] [172.16.3.65][e894f8e3][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[17:33:38] [172.16.3.65][db114556][ExtensionHostConnection] The client has reconnected.
+[17:38:38] [172.16.3.65][e894f8e3][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+[17:56:06] [172.16.3.65][db114556][ExtensionHostConnection] <91> Extension Host Process exited with code: 0, signal: null.
+[2026-08-22T05:14:55.386Z] info  code-server 4.103.2 54b33a75e0b4593b77f9a217323c4b27a42f4073
+[2026-08-22T05:14:55.387Z] info  Using user-data-dir /voc/work/.local/share/code-server
+[2026-08-22T05:14:55.407Z] info  Using config file /voc/work/.config/code-server/config.yaml
+[2026-08-22T05:14:55.407Z] info  HTTP server listening on http://0.0.0.0:8081/
+[2026-08-22T05:14:55.407Z] info    - Authentication is disabled
+[2026-08-22T05:14:55.407Z] info    - Not serving HTTPS
+[2026-08-22T05:14:55.407Z] info  Session server listening on /voc/work/.local/share/code-server/code-server-ipc.sock
+[05:14:56] 
+
+
+
+
+[05:14:56] Extension host agent started.
+[05:15:01] [172.16.8.1][fea994c2][ManagementConnection] New connection established.
+[05:15:04] [172.16.8.1][4ce29259][ExtensionHostConnection] New connection established.
+[05:15:04] [172.16.8.1][4ce29259][ExtensionHostConnection] <91> Launched Extension Host Process.
+[07:29:00] [172.16.8.1][fea994c2][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[07:29:02] [172.16.8.1][4ce29259][ExtensionHostConnection] <91> Extension Host Process exited with code: 0, signal: null.
+[07:30:41] [172.16.8.1][72089159][ManagementConnection] New connection established.
+[07:30:44] [172.16.8.1][9c070b81][ExtensionHostConnection] New connection established.
+[07:30:44] [172.16.8.1][9c070b81][ExtensionHostConnection] <27728> Launched Extension Host Process.
+[07:50:10] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[08:07:25] [172.16.8.1][72089159][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[08:07:25] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[08:07:25] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[08:10:14] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[08:14:51] [172.16.8.1][72089159][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[08:14:51] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[08:14:51] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[08:20:11] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[08:20:12] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[08:21:58] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[08:37:18] [172.16.8.1][72089159][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[08:37:18] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[08:37:28] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[08:42:00] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[08:55:33] [172.16.8.1][72089159][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[08:55:33] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[08:55:42] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[08:59:14] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[09:14:18] [172.16.8.1][72089159][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[09:14:18] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[09:14:22] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[09:19:03] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[09:29:58] [172.16.8.1][72089159][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[09:29:58] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[09:30:17] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[09:32:26] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[09:49:01] [172.16.8.1][72089159][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[09:49:01] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[09:49:02] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[09:51:02] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[10:00:18] [172.16.8.1][72089159][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[10:00:18] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[10:00:22] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[10:02:05] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[10:18:02] [172.16.8.1][72089159][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[10:18:02] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[10:18:03] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[10:20:11] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[10:38:34] [172.16.8.1][72089159][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[10:38:34] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[10:38:34] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[10:38:42] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[10:38:42] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[10:40:41] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[10:57:18] [172.16.8.1][72089159][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[10:57:18] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[10:57:35] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[11:02:01] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[11:15:59] [172.16.8.1][72089159][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[11:15:59] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[11:16:04] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[11:17:56] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[11:22:38] [172.16.8.1][72089159][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+[11:22:38] [172.16.8.1][72089159][ManagementConnection] The client has reconnected.
+[11:22:39] [172.16.8.1][9c070b81][ExtensionHostConnection] The client has reconnected.
+[11:26:41] [172.16.8.1][72089159][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+[2026-08-29T07:26:04.746Z] info  code-server 4.103.2 54b33a75e0b4593b77f9a217323c4b27a42f4073
+[2026-08-29T07:26:04.747Z] info  Using user-data-dir /voc/work/.local/share/code-server
+[2026-08-29T07:26:04.771Z] info  Using config file /voc/work/.config/code-server/config.yaml
+[2026-08-29T07:26:04.771Z] info  HTTP server listening on http://0.0.0.0:8081/
+[2026-08-29T07:26:04.771Z] info    - Authentication is disabled
+[2026-08-29T07:26:04.771Z] info    - Not serving HTTPS
+[2026-08-29T07:26:04.771Z] info  Session server listening on /voc/work/.local/share/code-server/code-server-ipc.sock
+[07:26:05] 
+
+
+
+
+[07:26:05] Extension host agent started.
+[07:26:09] [172.16.6.193][e830f2a7][ManagementConnection] New connection established.
+[07:26:12] [172.16.6.193][9d48d265][ExtensionHostConnection] New connection established.
+[07:26:12] [172.16.6.193][9d48d265][ExtensionHostConnection] <91> Launched Extension Host Process.

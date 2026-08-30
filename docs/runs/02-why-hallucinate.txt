@@ -1,0 +1,13 @@
+An LLM (Large Language Model) might hallucinate due to several reasons:
+
+1. **Training Data Limitations**: The model is trained on vast datasets that may contain inaccuracies or outdated information, leading to the generation of incorrect facts.
+
+2. **Pattern Recognition**: LLMs generate responses based on patterns in the data, which can sometimes result in plausible-sounding but false information.
+
+3. **Ambiguity in Queries**: Vague or ambiguous prompts can lead the model to make assumptions, resulting in hallucinated content.
+
+4. **Lack of Real-World Understanding**: LLMs do not possess true comprehension or awareness; they simulate understanding based on patterns rather than factual knowledge.
+
+5. **Overgeneralization**: The model may apply learned patterns too broadly, leading to incorrect conclusions or statements.
+
+6. **Inherent Uncertainty**: The probabilistic nature of LLMs means they can produce varied outputs, including nonsensical or incorrect information, even when trained on accurate data.

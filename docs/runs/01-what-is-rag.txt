@@ -1,0 +1,1 @@
+RAG, or Retrieval-Augmented Generation, is a machine learning approach that combines retrieval of relevant information from external sources with generative models to enhance the quality and accuracy of generated responses.

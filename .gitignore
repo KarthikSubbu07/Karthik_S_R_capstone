@@ -48,9 +48,12 @@ htmlcov/
 # Ignore local environment logs
 .local/
 .local
+.voc
+.voc/
 
 # Secure and ignore SSH keys
 .ssh/
 .npm/
+
 
 ## Files

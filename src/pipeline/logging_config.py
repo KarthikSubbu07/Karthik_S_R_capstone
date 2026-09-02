@@ -24,5 +24,5 @@ class JsonFormatter(logging.Formatter):
         Path(log_path).parent.mkdir(parents=True, exist_ok=True)
         fh = logging.FileHandler(log_path)
         fh.setFormatter(JsonFormatter())
-        log.addhandler(fh)
+        log.addHandler(fh)
         return log

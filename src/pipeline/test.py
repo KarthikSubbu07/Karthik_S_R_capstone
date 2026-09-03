@@ -6,8 +6,10 @@ import asyncio, time
 # print('cost:', ans.cost_usd)
 # print('retries:', ans.retries)
 
-
-from pipeline import ask_llm_with_retry, Question, run_batch
+try:
+    from .pipeline import ask_llm_with_retry, Question, run_batch
+except ImportError:
+    from pipeline import ask_llm_with_retry, Question, run_batch
 
 # # Clean — should succeed on attempt 0, no retries
 # ans = asyncio.run(ask_llm_with_retry(Question(text='What is RAG?')))

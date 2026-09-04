@@ -22,13 +22,30 @@ import asyncio
 import json
 import logging
 import time
+import sys
+import csv
+from pathlib import Path
 
 # Live-session stand-in. Same Pydantic shape as the real call.
 try:
     from .fake_llm import Question, Answer, fake_ask_llm, FakeLLMError
+    from .logging_config import get_logger
+    from .settings import Settings
 except ImportError:
     from fake_llm import Question, Answer, fake_ask_llm, FakeLLMError
+    from logging_config import get_logger
+    from settings import Settings
+log = get_logger("pipeline")
 
+
+# Adding a load_questions function
+def load_questions(csv_path: str | Path = "data/questions.csv") -> list[Question]:
+    questions = []
+    with open(csv_path, newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            questions.append(Question(text=row['text']))
+    return questions
 
 # ---------- Step 2: one async call ----------
 async def ask_llm(q: Question, fail_rate: float = 0.0) -> Answer:
@@ -84,45 +101,39 @@ async def run_batch(
     return await asyncio.gather(*tasks)
 
 
-# ---------- Step 5: structured (JSON) logging ----------
-# TODO (Step 5):
-class JsonFormatter(logging.Formatter):
-    def format(self, record):
-        import json
-        log_record = {
-            "ts": self.formatTime(record, self.datefmt),
-            "level": record.levelname,
-            "msg": record.getMessage(),
-        }
-        return json.dumps(log_record)
+# # ---------- Step 5: structured (JSON) logging ----------
+# # TODO (Step 5):
+# class JsonFormatter(logging.Formatter):
+#     def format(self, record):
+#         import json
+#         log_record = {
+#             "ts": self.formatTime(record, self.datefmt),
+#             "level": record.levelname,
+#             "msg": record.getMessage(),
+#         }
+#         return json.dumps(log_record)
     
-log = logging.getLogger("pipeline")
-log.setLevel(logging.INFO)
-_handler = logging.StreamHandler()
-_handler.setFormatter(JsonFormatter())
-log.addHandler(_handler)
-        
-    
-#   * class JsonFormatter(logging.Formatter): ...
-#       (emit one JSON record per call with ts / level / msg)
-#   * log = logging.getLogger("pipeline"); log.setLevel(logging.INFO)
-#   * handler = logging.StreamHandler(); handler.setFormatter(JsonFormatter())
-#   * log.addHandler(handler)
-#   * Then go back to ask_llm() and add: log.info(f"asked: {q.text[:40]}")
-
+# log = logging.getLogger("pipeline")
+# log.setLevel(logging.INFO)
+# _handler = logging.StreamHandler()
+# _handler.setFormatter(JsonFormatter())
+# log.addHandler(_handler)
 
 # ---------- main ----------
 if __name__ == "__main__":
-    import sys
-
-    fail_rate = float(sys.argv[1]) if len(sys.argv) > 1 else 0.0
+    settings = Settings()
+    log.info(f"config: {settings.model_dump(mode='json')}")
+    
+    
+    # fail_rate = float(sys.argv[1]) if len(sys.argv) > 1 else 0.0
+    
     sample = [
         Question(text="What is RAG in one sentence?"),
         Question(text="Name three uses of vector databases."),
         Question(text="Why might an LLM hallucinate?"),
     ]
     started = time.time()
-    answers = asyncio.run(run_batch(sample, fail_rate=fail_rate))
+    answers = asyncio.run(run_batch(sample, fail_rate=settings.fail_rate))
     elapsed = time.time() - started
     print(f"\n{len(answers)} answers in {elapsed:.2f}s\n")
     for a in answers:

@@ -835,3 +835,114 @@
 {"ts": 1788696152.276, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
 {"ts": 1788696153.346, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
 {"ts": 1788696153.451, "level": "INFO", "msg": "summary: {'started_at': 1788696147.184339, 'elapsed_seconds': 6.265959024429321, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0, 'fail_rate': 0.3, 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697834.215, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697834.215, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788697834.215, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788697834.215, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788697834.405, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788697834.405, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788697834.409, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788697834.41, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788697837.083, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788697838.443, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788697839.001, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788697840.358, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788697840.633, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788697840.738, "level": "INFO", "msg": "summary: {'started_at': 1788697834.2150578, 'elapsed_seconds': 6.5223822593688965, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0, 'fail_rate': 0.3, 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697840.758, "level": "INFO", "msg": "persisted run 1 with 5 answers to results.db", "logger": "pipeline"}
+{"ts": 1788697869.681, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697869.682, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788697869.682, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788697869.682, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788697869.833, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788697869.833, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788697869.838, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788697869.838, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788697871.296, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788697872.311, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788697873.065, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788697874.31, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788697875.285, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788697875.39, "level": "INFO", "msg": "summary: {'started_at': 1788697869.681522, 'elapsed_seconds': 5.708034038543701, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0, 'fail_rate': 0.3, 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697875.408, "level": "INFO", "msg": "persisted run 2 with 5 answers to results.db", "logger": "pipeline"}
+{"ts": 1788697895.748, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697895.748, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788697895.748, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788697895.748, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788697895.896, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788697895.899, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788697895.902, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788697895.903, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788697897.196, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788697898.495, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788697899.273, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788697900.008, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788697900.124, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788697900.231, "level": "INFO", "msg": "summary: {'started_at': 1788697895.748228, 'elapsed_seconds': 4.482053995132446, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0, 'fail_rate': 0.3, 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697900.248, "level": "INFO", "msg": "persisted run 3 with 5 answers to results.db", "logger": "pipeline"}
+{"ts": 1788709936.87, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788709936.87, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788709936.871, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788709936.871, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788709937.053, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788709937.055, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788709937.056, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788709937.056, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788709938.968, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788709940.458, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788709942.256, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788709942.597, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788709943.792, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788709943.898, "level": "INFO", "msg": "summary: {'started_at': 1788709936.870396, 'elapsed_seconds': 7.02773904800415, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0, 'fail_rate': 0.0, 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788709943.917, "level": "INFO", "msg": "persisted run 4 with 5 answers to results.db", "logger": "pipeline"}
+{"ts": 1788709964.484, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788709964.484, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788709964.484, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788709964.484, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788709964.634, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788709964.636, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788709964.638, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788709964.64, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788709966.236, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788709967.319, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788709968.78, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788709968.923, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788709970.499, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788709970.603, "level": "INFO", "msg": "summary: {'started_at': 1788709964.4841979, 'elapsed_seconds': 6.118943214416504, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0, 'fail_rate': 0.3, 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788709970.623, "level": "INFO", "msg": "persisted run 5 with 5 answers to results.db", "logger": "pipeline"}
+{"ts": 1788709977.137, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788709977.469, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788709978.279, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788709978.373, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788709978.384, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788709978.562, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788709978.664, "level": "INFO", "msg": "summary: {'started_at': 1788709977.1376011, 'elapsed_seconds': 1.5266139507293701, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0005, 'fail_rate': 0.0, 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788709978.677, "level": "INFO", "msg": "persisted run 6 with 5 answers to results.db", "logger": "pipeline"}
+{"ts": 1788710038.844, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788710039.504, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788710039.771, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (simulated transient failure: Why might an LLM produce confident but incorrect a)", "logger": "pipeline"}
+{"ts": 1788710039.875, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (simulated transient failure: What is a Pydantic BaseModel and when would you us)", "logger": "pipeline"}
+{"ts": 1788710039.979, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788710040.005, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (simulated transient failure: Name three real-world uses of vector databases.)", "logger": "pipeline"}
+{"ts": 1788710040.772, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788710040.877, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788710041.006, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788710041.38, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788710042.111, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788710042.163, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788710042.265, "level": "INFO", "msg": "summary: {'started_at': 1788710038.844519, 'elapsed_seconds': 3.420083999633789, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 3, 'total_cost_usd': 0.0005, 'fail_rate': 0.3, 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788710042.279, "level": "INFO", "msg": "persisted run 7 with 5 answers to results.db", "logger": "pipeline"}

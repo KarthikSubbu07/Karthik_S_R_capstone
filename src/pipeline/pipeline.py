@@ -18,6 +18,7 @@ Run it (after the TODOs are filled):
 """
 from __future__ import annotations
 
+import argparse
 import asyncio
 import json
 import time
@@ -162,10 +163,20 @@ async def run_in_batches(
 
 # ---------- main ----------
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Run the LLM pipeline")
+    parser.add_argument("--limit", type=int, default=None,
+                        help="Process only the first N questions (useful for debugging)")
+    args = parser.parse_args()
+    
     settings = Settings()
     log.info(f"config: {settings.model_dump(mode='json')}")
-    questions = load_questions(settings.questions_csv)[:5]
-    log.info(f"loaded {len(questions)} questions")
+    questions = load_questions(settings.questions_csv)
+    
+    if args.limit:
+        questions = questions[:args.limit]
+        log.info(f"limit applied: processing first {args.limit} of {len(questions)} questions")
+    else:
+        log.info(f"loaded {len(questions)} questions")
     started = time.time()    
     answers = asyncio.run(run_in_batches(questions, batch_size=settings.batch_size, fail_rate=settings.fail_rate))
     elapsed = time.time() - started

@@ -1,12 +1,12 @@
 {
   "summary": {
-    "started_at": 1788710038.844519,
-    "elapsed_seconds": 3.420083999633789,
-    "n_questions": 5,
-    "n_succeeded": 5,
-    "n_retries_total": 3,
-    "total_cost_usd": 0.0005,
-    "fail_rate": 0.3,
+    "started_at": 1788710417.524656,
+    "elapsed_seconds": 1.2365529537200928,
+    "n_questions": 2,
+    "n_succeeded": 2,
+    "n_retries_total": 0,
+    "total_cost_usd": 0.0002,
+    "fail_rate": 0.0,
     "use_fake": true
   },
   "answers": [
@@ -19,24 +19,6 @@
     {
       "question": "Name three real-world uses of vector databases.",
       "text": "Vector databases power semantic search, RAG context retrieval, and recommendation systems by storing high-dimensional embeddings of text.",
-      "cost_usd": 0.0001,
-      "retries": 1
-    },
-    {
-      "question": "Why might an LLM produce confident but incorrect answers?",
-      "text": "(simulated answer) A grounded, concise response to: Why might an LLM produce confident but incorrect answers?",
-      "cost_usd": 0.0001,
-      "retries": 1
-    },
-    {
-      "question": "What is a Pydantic BaseModel and when would you use one?",
-      "text": "Pydantic gives you typed Python classes that validate data at runtime \u2014 ideal for checking LLM outputs match the shape your code expects.",
-      "cost_usd": 0.0001,
-      "retries": 1
-    },
-    {
-      "question": "Explain async and await in plain language.",
-      "text": "Async Python lets one program work on many I/O-bound tasks at once: while awaiting a network call, the event loop runs other tasks instead of blocking.",
       "cost_usd": 0.0001,
       "retries": 0
     }

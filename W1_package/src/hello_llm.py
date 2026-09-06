@@ -23,11 +23,12 @@ def ask(question: str) -> str:
             {"role": "system", "content": "You are concise."},
             {"role": "user",   "content": question},
         ],
-        temperature=0.3,
+        temperature=0.3,        
     )
     return resp.choices[0].message.content
 
 
 if __name__ == "__main__":
     q = " ".join(sys.argv[1:]) or "Say hello in one sentence."
+    q = "What is RAG in one sentence?"
     print(ask(q))

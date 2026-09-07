@@ -1,0 +1,1045 @@
+{"ts": 1788484964.14, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788484964.14, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788484964.14, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788484964.14, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788484980.948, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788484980.948, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788484980.948, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788484980.948, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788485410.05, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.4, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788485410.05, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788485410.05, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788485410.05, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788485410.579, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM hallucinate? (simulated transient failure: Why might an LLM hallucinate?)", "logger": "pipeline"}
+{"ts": 1788485410.889, "level": "WARNING", "msg": "attempt 1 failed for question: Name three uses of vector databases. (simulated transient failure: Name three uses of vector databases.)", "logger": "pipeline"}
+{"ts": 1788485411.448, "level": "WARNING", "msg": "attempt 1 failed for question: What is RAG in one sentence? (simulated transient failure: What is RAG in one sentence?)", "logger": "pipeline"}
+{"ts": 1788485411.58, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788485411.89, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788485412.449, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788485412.994, "level": "WARNING", "msg": "attempt 2 failed for question: What is RAG in one sentence? (simulated transient failure: What is RAG in one sentence?)", "logger": "pipeline"}
+{"ts": 1788485414.996, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788485469.236, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.4, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788485469.236, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788485469.236, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788485469.236, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788485469.813, "level": "WARNING", "msg": "attempt 1 failed for question: Name three uses of vector databases. (simulated transient failure: Name three uses of vector databases.)", "logger": "pipeline"}
+{"ts": 1788485470.814, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788485506.378, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.4, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788485506.378, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788485506.378, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788485506.378, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788485507.185, "level": "WARNING", "msg": "attempt 1 failed for question: Name three uses of vector databases. (simulated transient failure: Name three uses of vector databases.)", "logger": "pipeline"}
+{"ts": 1788485507.471, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM hallucinate? (simulated transient failure: Why might an LLM hallucinate?)", "logger": "pipeline"}
+{"ts": 1788485508.187, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788485508.473, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788485536.91, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788485536.911, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788485536.911, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788485536.911, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788485586.722, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788485586.722, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788485586.722, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788485586.722, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788485602.933, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788485602.933, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788485602.933, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788485602.933, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788578325.257, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788578325.258, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788578325.258, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788578325.258, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788578325.258, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788578325.258, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788578325.258, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788578325.258, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788578326.818, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788578326.818, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788578326.818, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788578326.819, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788578326.819, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788578326.819, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788578328.259, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788578328.26, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788578328.26, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788578328.26, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788578328.261, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788578328.261, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788578329.755, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788578329.755, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788578329.755, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788578329.755, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788578329.756, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788578329.756, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788659374.906, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788659374.907, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788659374.907, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788659374.907, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788659374.907, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788659374.907, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788659374.907, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788659374.907, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788659376.453, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788659376.454, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788659376.454, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788659376.454, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788659376.454, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788659376.455, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788659377.908, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788659377.909, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788659377.909, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788659377.91, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788659377.91, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788659377.911, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788659379.272, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788659379.273, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788659379.273, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788659379.273, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788659379.273, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788659379.273, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788659424.711, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788659424.711, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788659424.712, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788659424.712, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788659424.712, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788659424.712, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788659424.712, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788659424.712, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788659426.176, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788659426.177, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788659426.177, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788659426.177, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788659426.177, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788659426.177, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788659427.699, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788659427.7, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788659427.7, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788659427.7, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788659427.701, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788659427.701, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788659429.274, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788659429.274, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788659429.274, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788659429.275, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788659429.275, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788659429.275, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788659517.0, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788659517.0, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788659517.0, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788659517.0, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788659517.0, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788659517.0, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788659517.0, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788659517.0, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788659518.593, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788659518.593, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788659518.593, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788659518.593, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788659518.594, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788659518.594, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788659519.829, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788659519.829, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788659519.829, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788659519.83, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788659519.83, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788659519.83, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788659521.349, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788659521.35, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788659521.35, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788659521.35, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788659521.35, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788659521.35, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788659540.036, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788659540.037, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788659540.037, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788659540.037, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788659540.037, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788659540.037, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788659540.037, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788659540.037, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788659541.282, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788659541.283, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788659541.283, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788659541.283, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788659541.283, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788659541.283, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788659542.563, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788659542.564, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788659542.564, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788659542.564, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788659542.564, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788659542.564, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788659544.06, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788659544.06, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788659544.06, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788659544.061, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788659544.061, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788659544.061, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788659585.269, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788659585.269, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788659585.269, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788659585.269, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788659585.269, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788659585.269, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788659585.269, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788659585.269, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788659586.266, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788659586.266, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788659586.267, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788659586.267, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788659586.267, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788659586.267, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788659587.836, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788659587.836, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788659587.836, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788659587.837, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788659587.837, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788659587.837, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788659589.325, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788659589.326, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788659589.326, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788659589.326, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788659589.326, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788659589.326, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788659667.877, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788659667.878, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788659667.878, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788659667.878, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788659667.878, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788659667.878, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788659667.878, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788659667.878, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788659669.452, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788659669.453, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788659669.454, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788659669.454, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788659669.454, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788659669.454, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788659671.005, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788659671.006, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788659671.006, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788659671.006, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788659671.006, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788659671.007, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788659672.542, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788659672.543, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788659672.543, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788659672.543, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788659672.543, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788659672.544, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788659821.175, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788659821.175, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788659821.175, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788659821.175, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788659821.175, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788659821.175, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788659821.175, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788659821.175, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788659822.52, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788659822.52, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788659822.52, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788659822.52, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788659822.52, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788659822.52, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788659823.449, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788659823.449, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788659823.449, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788659823.449, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788659823.449, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788659823.449, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788659824.748, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788659824.748, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788659824.749, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788659824.749, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788659824.749, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788659824.749, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788659938.184, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788659938.184, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788659938.184, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788659938.184, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788659938.184, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788659938.184, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788659938.184, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788659938.184, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788659939.72, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788659939.72, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788659939.72, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788659939.72, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788659939.72, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788659939.72, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788659941.224, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788659941.224, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788659941.225, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788659941.225, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788659941.225, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788659941.225, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788659942.667, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788659942.667, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788659942.668, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788659942.668, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788659942.668, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788659942.668, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788659944.044, "level": "INFO", "msg": "summary: {'started_at': 1788659938.1838741, 'elapsed_seconds': 5.860106945037842, 'n_questions': 20, 'n_succeeded': 20, 'n_retries_total': 0, 'total_cost_usd': 0.002, 'fail_rate': 0.0, 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788659962.362, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788659962.362, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788659962.362, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788659962.362, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788659962.362, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788659962.362, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788659962.362, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788659962.362, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788659963.55, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788659963.55, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788659963.55, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788659963.55, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788659963.55, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788659963.55, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788659964.94, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788659964.94, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788659964.94, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788659964.94, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788659964.94, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788659964.94, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788659966.46, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788659966.461, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788659966.461, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788659966.461, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788659966.461, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788659966.461, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788659968.058, "level": "INFO", "msg": "summary: {'started_at': 1788659962.361909, 'elapsed_seconds': 5.696101903915405, 'n_questions': 20, 'n_succeeded': 20, 'n_retries_total': 0, 'total_cost_usd': 0.002, 'fail_rate': 0.0, 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788660076.139, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788660076.139, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788660076.139, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788660076.139, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788660076.139, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788660076.139, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788660076.139, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788660076.139, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788660077.397, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788660077.398, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788660077.398, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788660077.398, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788660077.398, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788660077.398, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788660078.64, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788660078.64, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788660078.64, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788660078.641, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788660078.641, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788660078.641, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788660080.229, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788660080.229, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788660080.23, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788660080.23, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788660080.23, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788660080.23, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788660081.706, "level": "INFO", "msg": "summary: {'started_at': 1788660076.139144, 'elapsed_seconds': 5.566160202026367, 'n_questions': 20, 'n_succeeded': 20, 'n_retries_total': 0, 'total_cost_usd': 0.002, 'fail_rate': 0.0, 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788660248.552, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788660248.552, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788660248.552, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788660248.552, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788660248.552, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788660248.552, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788660248.552, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788660248.552, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788660250.122, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788660250.122, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788660250.122, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788660250.122, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788660250.122, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788660250.122, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788660251.443, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788660251.444, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788660251.444, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788660251.444, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788660251.444, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788660251.444, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788660252.705, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788660252.706, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788660252.706, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788660252.706, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788660252.706, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788660252.706, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788660253.709, "level": "INFO", "msg": "summary: {'started_at': 1788660248.551959, 'elapsed_seconds': 5.156738042831421, 'n_questions': 20, 'n_succeeded': 20, 'n_retries_total': 0, 'total_cost_usd': 0.002, 'fail_rate': 0.0, 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788660283.872, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788660283.872, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788660283.872, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788660283.873, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788660283.873, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788660283.873, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788660283.873, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788660283.873, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788660284.449, "level": "WARNING", "msg": "attempt 1 failed for question: Explain async and await in plain languag (simulated transient failure: Explain async and await in plain language.)", "logger": "pipeline"}
+{"ts": 1788660285.45, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788660286.635, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788660286.636, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788660286.636, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788660286.636, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788660286.637, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788660286.637, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788660287.236, "level": "WARNING", "msg": "attempt 1 failed for question: Why do we use exponential backoff for re (simulated transient failure: Why do we use exponential backoff for retries?)", "logger": "pipeline"}
+{"ts": 1788660288.237, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788660288.829, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788660288.83, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788660288.83, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788660288.83, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788660288.83, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788660288.83, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788660289.28, "level": "WARNING", "msg": "attempt 1 failed for question: Why is structured logging useful for AI  (simulated transient failure: Why is structured logging useful for AI systems?)", "logger": "pipeline"}
+{"ts": 1788660290.282, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788660290.987, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788660290.988, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788660290.988, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788660290.988, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788660290.988, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788660290.988, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788660292.493, "level": "INFO", "msg": "summary: {'started_at': 1788660283.872336, 'elapsed_seconds': 8.62056016921997, 'n_questions': 20, 'n_succeeded': 20, 'n_retries_total': 3, 'total_cost_usd': 0.002, 'fail_rate': 0.3, 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788694526.581, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788694526.582, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788694526.582, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788694526.582, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694526.784, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694526.784, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694526.787, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694526.789, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694527.821, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1309**************************************2182. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694527.835, "level": "WARNING", "msg": "attempt 1 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1309**************************************2182. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694527.836, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1309**************************************2182. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694527.852, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1309**************************************2182. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694527.858, "level": "WARNING", "msg": "attempt 1 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1309**************************************2182. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694528.823, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694528.836, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694528.837, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694528.853, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694528.859, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694529.121, "level": "WARNING", "msg": "attempt 2 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1309**************************************2182. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694529.155, "level": "WARNING", "msg": "attempt 2 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1309**************************************2182. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694529.17, "level": "WARNING", "msg": "attempt 2 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1309**************************************2182. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694529.177, "level": "WARNING", "msg": "attempt 2 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1309**************************************2182. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694529.179, "level": "WARNING", "msg": "attempt 2 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1309**************************************2182. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694531.122, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694531.156, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694531.171, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694531.178, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694531.18, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694614.693, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788694614.693, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788694614.693, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788694614.693, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694614.84, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694614.841, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694614.844, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694614.845, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694615.468, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-2409*************************************0072. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694615.471, "level": "WARNING", "msg": "attempt 1 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-2409*************************************0072. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694615.501, "level": "WARNING", "msg": "attempt 1 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-2409*************************************0072. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694615.502, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-2409*************************************0072. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694615.509, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-2409*************************************0072. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694616.47, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694616.474, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694616.502, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694616.505, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694616.51, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694616.778, "level": "WARNING", "msg": "attempt 2 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-2409*************************************0072. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694616.798, "level": "WARNING", "msg": "attempt 2 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-2409*************************************0072. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694616.82, "level": "WARNING", "msg": "attempt 2 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-2409*************************************0072. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694616.83, "level": "WARNING", "msg": "attempt 2 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-2409*************************************0072. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694616.854, "level": "WARNING", "msg": "attempt 2 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-2409*************************************0072. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694618.78, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694618.8, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694618.822, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694618.831, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694618.855, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694675.509, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788694675.509, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788694675.509, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788694675.509, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694675.655, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694675.658, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694675.659, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694675.661, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694676.374, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694676.401, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694676.421, "level": "WARNING", "msg": "attempt 1 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694676.434, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694676.455, "level": "WARNING", "msg": "attempt 1 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694677.375, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694677.403, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694677.422, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694677.436, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694677.456, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694677.701, "level": "WARNING", "msg": "attempt 2 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694677.734, "level": "WARNING", "msg": "attempt 2 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694677.737, "level": "WARNING", "msg": "attempt 2 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694677.748, "level": "WARNING", "msg": "attempt 2 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694677.791, "level": "WARNING", "msg": "attempt 2 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694679.702, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694679.735, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694679.739, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694679.75, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694679.792, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694704.298, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788694704.298, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788694704.298, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788694704.298, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694704.445, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694704.447, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694704.449, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694704.451, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694704.83, "level": "WARNING", "msg": "attempt 1 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694704.848, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694704.855, "level": "WARNING", "msg": "attempt 1 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694704.862, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694704.877, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694705.832, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694705.849, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694705.856, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694705.863, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694705.878, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694706.136, "level": "WARNING", "msg": "attempt 2 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694706.152, "level": "WARNING", "msg": "attempt 2 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694706.176, "level": "WARNING", "msg": "attempt 2 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694706.195, "level": "WARNING", "msg": "attempt 2 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694706.21, "level": "WARNING", "msg": "attempt 2 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1040**************************************0771. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694708.137, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694708.153, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694708.178, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694708.196, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694708.212, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694788.012, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788694788.012, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788694788.012, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788694788.012, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694788.157, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694788.16, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694788.161, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694788.163, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694788.764, "level": "WARNING", "msg": "attempt 1 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694788.764, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694788.779, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694788.813, "level": "WARNING", "msg": "attempt 1 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694788.82, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694789.765, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694789.77, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694789.78, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694789.814, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694789.82, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694790.056, "level": "WARNING", "msg": "attempt 2 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694790.058, "level": "WARNING", "msg": "attempt 2 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694790.094, "level": "WARNING", "msg": "attempt 2 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694790.103, "level": "WARNING", "msg": "attempt 2 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694790.136, "level": "WARNING", "msg": "attempt 2 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694792.057, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694792.062, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694792.096, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694792.104, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694792.138, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694828.932, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788694828.932, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788694828.932, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788694828.932, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694829.087, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694829.087, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694829.091, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694829.092, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694829.523, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694829.527, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694829.565, "level": "WARNING", "msg": "attempt 1 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694829.573, "level": "WARNING", "msg": "attempt 1 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694829.699, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694830.524, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694830.529, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694830.567, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694830.574, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694830.7, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694830.806, "level": "WARNING", "msg": "attempt 2 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694830.809, "level": "WARNING", "msg": "attempt 2 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694830.851, "level": "WARNING", "msg": "attempt 2 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694830.893, "level": "WARNING", "msg": "attempt 2 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694830.983, "level": "WARNING", "msg": "attempt 2 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694832.808, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694832.813, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694832.852, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694832.894, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694832.984, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694959.705, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788694959.705, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788694959.705, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788694959.705, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694959.858, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694959.859, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694959.863, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694959.864, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694960.476, "level": "WARNING", "msg": "attempt 1 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694960.477, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694960.48, "level": "WARNING", "msg": "attempt 1 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694960.484, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694960.507, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694961.478, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694961.48, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694961.481, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694961.485, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788694961.508, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694961.77, "level": "WARNING", "msg": "attempt 2 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694961.777, "level": "WARNING", "msg": "attempt 2 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694961.792, "level": "WARNING", "msg": "attempt 2 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694961.802, "level": "WARNING", "msg": "attempt 2 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694961.809, "level": "WARNING", "msg": "attempt 2 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788694963.772, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788694963.777, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788694963.793, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788694963.803, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788694963.809, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695132.663, "level": "INFO", "msg": "config: {'questions_csv': 'data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788695132.663, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788695132.663, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788695132.663, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695132.81, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695132.81, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695132.814, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695132.814, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695133.397, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695133.402, "level": "WARNING", "msg": "attempt 1 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695133.405, "level": "WARNING", "msg": "attempt 1 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695133.406, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695133.412, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695134.399, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695134.402, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695134.406, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695134.407, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695134.412, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695134.689, "level": "WARNING", "msg": "attempt 2 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695134.691, "level": "WARNING", "msg": "attempt 2 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695134.714, "level": "WARNING", "msg": "attempt 2 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695134.735, "level": "WARNING", "msg": "attempt 2 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695134.746, "level": "WARNING", "msg": "attempt 2 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695136.69, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695136.696, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695136.716, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695136.736, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695136.748, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695307.796, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788695307.796, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788695307.796, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788695307.796, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695307.955, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695307.956, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695307.96, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695307.962, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695308.361, "level": "WARNING", "msg": "attempt 1 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695308.374, "level": "WARNING", "msg": "attempt 1 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695308.56, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695308.581, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695308.595, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695309.363, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695309.376, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695309.562, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695309.582, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695309.596, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695309.656, "level": "WARNING", "msg": "attempt 2 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695309.694, "level": "WARNING", "msg": "attempt 2 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695309.875, "level": "WARNING", "msg": "attempt 2 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695309.886, "level": "WARNING", "msg": "attempt 2 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695309.896, "level": "WARNING", "msg": "attempt 2 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695311.657, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695311.695, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695311.877, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695311.887, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695311.897, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695334.174, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788695334.175, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788695334.175, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788695334.175, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695334.326, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695334.326, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695334.329, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695334.33, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695334.687, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695334.718, "level": "WARNING", "msg": "attempt 1 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695334.721, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695334.739, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695334.76, "level": "WARNING", "msg": "attempt 1 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695335.689, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695335.72, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695335.724, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695335.741, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695335.762, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695335.993, "level": "WARNING", "msg": "attempt 2 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695336.015, "level": "WARNING", "msg": "attempt 2 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695336.044, "level": "WARNING", "msg": "attempt 2 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695336.047, "level": "WARNING", "msg": "attempt 2 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695336.071, "level": "WARNING", "msg": "attempt 2 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695337.994, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695338.017, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695338.045, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695338.049, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695338.073, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695410.423, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788695410.423, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788695410.423, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788695410.423, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695410.58, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695410.583, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695410.585, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695410.588, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695410.996, "level": "WARNING", "msg": "attempt 1 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695411.173, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695411.176, "level": "WARNING", "msg": "attempt 1 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695411.19, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695411.198, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695411.998, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695412.174, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695412.176, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695412.192, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695412.198, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695412.3, "level": "WARNING", "msg": "attempt 2 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695412.48, "level": "WARNING", "msg": "attempt 2 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695412.485, "level": "WARNING", "msg": "attempt 2 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695412.503, "level": "WARNING", "msg": "attempt 2 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695412.514, "level": "WARNING", "msg": "attempt 2 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695414.301, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695414.482, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695414.485, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695414.504, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695414.515, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695604.612, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788695604.612, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788695604.613, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788695604.613, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695604.801, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695604.801, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695604.805, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695604.806, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695605.246, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695605.427, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695605.427, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695605.428, "level": "WARNING", "msg": "attempt 1 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695605.438, "level": "WARNING", "msg": "attempt 1 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695606.247, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695606.428, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695606.432, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695606.434, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695606.439, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695606.539, "level": "WARNING", "msg": "attempt 2 failed for question: Why might an LLM produce confident but i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695606.719, "level": "WARNING", "msg": "attempt 2 failed for question: Name three real-world uses of vector dat (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695606.729, "level": "WARNING", "msg": "attempt 2 failed for question: What is a Pydantic BaseModel and when wo (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695606.75, "level": "WARNING", "msg": "attempt 2 failed for question: What is retrieval-augmented generation i (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695606.76, "level": "WARNING", "msg": "attempt 2 failed for question: Explain async and await in plain languag (Error code: 401 - {'error': {'message': 'Incorrect API key provided: voc-1629**************************************3038. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}})", "logger": "pipeline"}
+{"ts": 1788695608.541, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695608.721, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695608.73, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695608.751, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695608.762, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695785.736, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788695785.737, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788695785.737, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788695785.737, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695785.883, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695785.885, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695785.887, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695785.889, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695787.927, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695789.452, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695790.657, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695790.893, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695791.234, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695791.336, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788695791.337, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788695791.342, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788695791.345, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788695791.346, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788695791.347, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788695792.643, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788695794.01, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788695795.072, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788695795.16, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788695795.757, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788695795.858, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788695795.859, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788695795.862, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788695795.864, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788695795.865, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788695795.866, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788695797.098, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788695797.619, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788695798.656, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788695798.925, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788695799.575, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788695799.676, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788695799.676, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788695799.679, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788695799.681, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788695799.682, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788695799.684, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788695801.357, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788695802.444, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788695803.433, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788695804.683, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788695807.018, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788695905.228, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788695905.228, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788695905.228, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788695905.228, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695905.404, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695905.406, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695905.408, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695905.41, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695908.623, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788695909.471, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788695910.391, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788695911.846, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788695912.746, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788695912.848, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788695912.848, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788695912.852, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788695912.853, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788695912.855, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788695912.856, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788695914.027, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788695915.719, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788695916.36, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788695916.411, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788695917.661, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788695917.763, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788695917.764, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788695917.767, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788695917.769, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788695917.77, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788695917.771, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788695919.089, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788695919.65, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788695920.427, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788695921.195, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788695921.844, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788695921.946, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788695921.946, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788695921.949, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788695921.951, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788695921.952, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788695921.954, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788695923.424, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788695924.067, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788695925.856, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788695927.562, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788695928.123, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788696147.184, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788696147.184, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788696147.184, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788696147.185, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788696147.356, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788696147.357, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788696147.357, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788696147.362, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788696149.297, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788696150.862, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788696152.016, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788696152.276, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788696153.346, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788696153.451, "level": "INFO", "msg": "summary: {'started_at': 1788696147.184339, 'elapsed_seconds': 6.265959024429321, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0, 'fail_rate': 0.3, 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697834.215, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697834.215, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788697834.215, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788697834.215, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788697834.405, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788697834.405, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788697834.409, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788697834.41, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788697837.083, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788697838.443, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788697839.001, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788697840.358, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788697840.633, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788697840.738, "level": "INFO", "msg": "summary: {'started_at': 1788697834.2150578, 'elapsed_seconds': 6.5223822593688965, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0, 'fail_rate': 0.3, 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697840.758, "level": "INFO", "msg": "persisted run 1 with 5 answers to results.db", "logger": "pipeline"}
+{"ts": 1788697869.681, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697869.682, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788697869.682, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788697869.682, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788697869.833, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788697869.833, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788697869.838, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788697869.838, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788697871.296, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788697872.311, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788697873.065, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788697874.31, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788697875.285, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788697875.39, "level": "INFO", "msg": "summary: {'started_at': 1788697869.681522, 'elapsed_seconds': 5.708034038543701, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0, 'fail_rate': 0.3, 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697875.408, "level": "INFO", "msg": "persisted run 2 with 5 answers to results.db", "logger": "pipeline"}
+{"ts": 1788697895.748, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697895.748, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788697895.748, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788697895.748, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788697895.896, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788697895.899, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788697895.902, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788697895.903, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788697897.196, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788697898.495, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788697899.273, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788697900.008, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788697900.124, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788697900.231, "level": "INFO", "msg": "summary: {'started_at': 1788697895.748228, 'elapsed_seconds': 4.482053995132446, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0, 'fail_rate': 0.3, 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788697900.248, "level": "INFO", "msg": "persisted run 3 with 5 answers to results.db", "logger": "pipeline"}
+{"ts": 1788709936.87, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788709936.87, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788709936.871, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788709936.871, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788709937.053, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788709937.055, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788709937.056, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788709937.056, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788709938.968, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788709940.458, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788709942.256, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788709942.597, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788709943.792, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788709943.898, "level": "INFO", "msg": "summary: {'started_at': 1788709936.870396, 'elapsed_seconds': 7.02773904800415, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0, 'fail_rate': 0.0, 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788709943.917, "level": "INFO", "msg": "persisted run 4 with 5 answers to results.db", "logger": "pipeline"}
+{"ts": 1788709964.484, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788709964.484, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788709964.484, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788709964.484, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788709964.634, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788709964.636, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788709964.638, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788709964.64, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788709966.236, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788709967.319, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788709968.78, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788709968.923, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788709970.499, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788709970.603, "level": "INFO", "msg": "summary: {'started_at': 1788709964.4841979, 'elapsed_seconds': 6.118943214416504, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0, 'fail_rate': 0.3, 'use_fake': False}", "logger": "pipeline"}
+{"ts": 1788709970.623, "level": "INFO", "msg": "persisted run 5 with 5 answers to results.db", "logger": "pipeline"}
+{"ts": 1788709977.137, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788709977.138, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788709977.469, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788709978.279, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788709978.373, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788709978.384, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788709978.562, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788709978.664, "level": "INFO", "msg": "summary: {'started_at': 1788709977.1376011, 'elapsed_seconds': 1.5266139507293701, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 0, 'total_cost_usd': 0.0005, 'fail_rate': 0.0, 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788709978.677, "level": "INFO", "msg": "persisted run 6 with 5 answers to results.db", "logger": "pipeline"}
+{"ts": 1788710038.844, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "loaded 5 questions", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788710038.845, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788710039.504, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788710039.771, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM produce confident but i (simulated transient failure: Why might an LLM produce confident but incorrect a)", "logger": "pipeline"}
+{"ts": 1788710039.875, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (simulated transient failure: What is a Pydantic BaseModel and when would you us)", "logger": "pipeline"}
+{"ts": 1788710039.979, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788710040.005, "level": "WARNING", "msg": "attempt 1 failed for question: Name three real-world uses of vector dat (simulated transient failure: Name three real-world uses of vector databases.)", "logger": "pipeline"}
+{"ts": 1788710040.772, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788710040.877, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788710041.006, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788710041.38, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788710042.111, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788710042.163, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788710042.265, "level": "INFO", "msg": "summary: {'started_at': 1788710038.844519, 'elapsed_seconds': 3.420083999633789, 'n_questions': 5, 'n_succeeded': 5, 'n_retries_total': 3, 'total_cost_usd': 0.0005, 'fail_rate': 0.3, 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788710042.279, "level": "INFO", "msg": "persisted run 7 with 5 answers to results.db", "logger": "pipeline"}
+{"ts": 1788710350.393, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.3, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788710350.393, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788710350.394, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788710350.394, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788710350.394, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788710350.394, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788710350.394, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788710350.394, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788710350.91, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788710351.228, "level": "WARNING", "msg": "attempt 1 failed for question: What is a Pydantic BaseModel and when wo (simulated transient failure: What is a Pydantic BaseModel and when would you us)", "logger": "pipeline"}
+{"ts": 1788710351.261, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788710351.581, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788710351.74, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788710352.229, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788710352.555, "level": "WARNING", "msg": "attempt 2 failed for question: What is a Pydantic BaseModel and when wo (simulated transient failure: What is a Pydantic BaseModel and when would you us)", "logger": "pipeline"}
+{"ts": 1788710354.556, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788710389.53, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788710389.53, "level": "INFO", "msg": "loaded 20 questions", "logger": "pipeline"}
+{"ts": 1788710389.531, "level": "INFO", "msg": "batch 1: 5 questions", "logger": "pipeline"}
+{"ts": 1788710389.531, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788710389.531, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788710389.531, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788710389.531, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788710389.531, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788710389.983, "level": "INFO", "msg": "asked: What is a Pydantic BaseModel and when wo", "logger": "pipeline"}
+{"ts": 1788710390.555, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788710390.733, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788710390.789, "level": "INFO", "msg": "asked: Why might an LLM produce confident but i", "logger": "pipeline"}
+{"ts": 1788710390.83, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788710390.932, "level": "INFO", "msg": "batch 2: 5 questions", "logger": "pipeline"}
+{"ts": 1788710390.932, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788710390.933, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788710390.933, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788710390.933, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788710390.933, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788710391.522, "level": "INFO", "msg": "asked: Why do we use exponential backoff for re", "logger": "pipeline"}
+{"ts": 1788710391.907, "level": "INFO", "msg": "asked: When would you choose fine-tuning over R", "logger": "pipeline"}
+{"ts": 1788710391.917, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788710391.928, "level": "INFO", "msg": "asked: List three common chunking strategies fo", "logger": "pipeline"}
+{"ts": 1788710392.408, "level": "INFO", "msg": "asked: Give a one-line definition of an embeddi", "logger": "pipeline"}
+{"ts": 1788710392.51, "level": "INFO", "msg": "batch 3: 5 questions", "logger": "pipeline"}
+{"ts": 1788710392.51, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788710392.51, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788710392.51, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788710392.511, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788710392.511, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788710392.945, "level": "INFO", "msg": "asked: What is the purpose of a .env file?", "logger": "pipeline"}
+{"ts": 1788710393.005, "level": "INFO", "msg": "asked: Explain what asyncio.gather does in one ", "logger": "pipeline"}
+{"ts": 1788710393.15, "level": "INFO", "msg": "asked: Name two trade-offs of long-context prom", "logger": "pipeline"}
+{"ts": 1788710393.493, "level": "INFO", "msg": "asked: Why is structured logging useful for AI ", "logger": "pipeline"}
+{"ts": 1788710393.923, "level": "INFO", "msg": "asked: What is the role of a system prompt?", "logger": "pipeline"}
+{"ts": 1788710394.024, "level": "INFO", "msg": "batch 4: 5 questions", "logger": "pipeline"}
+{"ts": 1788710394.025, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788710394.025, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788710394.025, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788710394.025, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788710394.025, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788710394.399, "level": "INFO", "msg": "asked: What is the role of a retriever in a RAG", "logger": "pipeline"}
+{"ts": 1788710394.627, "level": "INFO", "msg": "asked: What is the difference between batching ", "logger": "pipeline"}
+{"ts": 1788710395.075, "level": "INFO", "msg": "asked: What does temperature do in an LLM call?", "logger": "pipeline"}
+{"ts": 1788710395.334, "level": "INFO", "msg": "asked: What is the difference between sync and ", "logger": "pipeline"}
+{"ts": 1788710395.427, "level": "INFO", "msg": "asked: Give one example of when NOT to use an L", "logger": "pipeline"}
+{"ts": 1788710395.53, "level": "INFO", "msg": "summary: {'started_at': 1788710389.530507, 'elapsed_seconds': 5.999040842056274, 'n_questions': 20, 'n_succeeded': 20, 'n_retries_total': 0, 'total_cost_usd': 0.002, 'fail_rate': 0.0, 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788710395.55, "level": "INFO", "msg": "persisted run 8 with 20 answers to results.db", "logger": "pipeline"}
+{"ts": 1788710417.525, "level": "INFO", "msg": "config: {'questions_csv': '/Users/subramanianramank/Documents/IITM/Karthik_S_R_capstone/src/pipeline/data/questions.csv', 'results_json': 'results.json', 'results_db': 'results.db', 'batch_size': 5, 'fail_rate': 0.0, 'model': 'gpt-4o-mini', 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788710417.525, "level": "INFO", "msg": "limit applied: processing first 2 of 2 questions", "logger": "pipeline"}
+{"ts": 1788710417.525, "level": "INFO", "msg": "batch 1: 2 questions", "logger": "pipeline"}
+{"ts": 1788710417.525, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788710417.525, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788710418.548, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
+{"ts": 1788710418.659, "level": "INFO", "msg": "asked: Name three real-world uses of vector dat", "logger": "pipeline"}
+{"ts": 1788710418.762, "level": "INFO", "msg": "summary: {'started_at': 1788710417.524656, 'elapsed_seconds': 1.2365529537200928, 'n_questions': 2, 'n_succeeded': 2, 'n_retries_total': 0, 'total_cost_usd': 0.0002, 'fail_rate': 0.0, 'use_fake': True}", "logger": "pipeline"}
+{"ts": 1788710418.774, "level": "INFO", "msg": "persisted run 9 with 2 answers to results.db", "logger": "pipeline"}
+{"ts": 1788739411.474, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788739411.474, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788739411.474, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788739411.474, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788739411.474, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788739412.158, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788739412.325, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788739412.419, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788739412.445, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788739412.604, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788739480.947, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788739480.947, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788739480.947, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788739480.947, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788739480.947, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788739481.799, "level": "INFO", "msg": "asked: What is the difference between a chatbot", "logger": "pipeline"}
+{"ts": 1788739481.891, "level": "INFO", "msg": "asked: Explain async and await in plain languag", "logger": "pipeline"}
+{"ts": 1788739481.937, "level": "WARNING", "msg": "attempt 1 failed for question: Why might an LLM hallucinate? (simulated transient failure: Why might an LLM hallucinate?)", "logger": "pipeline"}
+{"ts": 1788739482.06, "level": "WARNING", "msg": "attempt 1 failed for question: What is RAG in one sentence? (simulated transient failure: What is RAG in one sentence?)", "logger": "pipeline"}
+{"ts": 1788739482.377, "level": "INFO", "msg": "asked: Name three uses of vector databases.", "logger": "pipeline"}
+{"ts": 1788739482.938, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788739483.061, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}
+{"ts": 1788739483.302, "level": "INFO", "msg": "asked: Why might an LLM hallucinate?", "logger": "pipeline"}
+{"ts": 1788739483.807, "level": "INFO", "msg": "asked: What is RAG in one sentence?", "logger": "pipeline"}

@@ -1,0 +1,2 @@
+In gather by default we cannot understand which answer took more time, but when we use as_completed we can see, for which Q's the LLM returned asnswers sooner.  Its a case of Latency understadning
+Gather can be used when we need all the responses complete to move on to the next step. As completeed can be used if we can proceed with even one response and there is no dependency on the next one.

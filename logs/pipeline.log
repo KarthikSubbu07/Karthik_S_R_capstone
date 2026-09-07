@@ -41,3 +41,27 @@
 {"ts": 1788741861.821, "level": "INFO", "msg": "asked: What is retrieval-augmented generation i", "logger": "pipeline"}
 {"ts": 1788741861.923, "level": "INFO", "msg": "summary: {'started_at': 1788741861.154731, 'elapsed_seconds': 0.7680928707122803, 'n_questions': 1, 'n_succeeded': 1, 'n_retries_total': 0, 'total_cost_usd': 0.0001, 'fail_rate': 0.0, 'use_fake': True}", "logger": "pipeline"}
 {"ts": 1788741861.937, "level": "INFO", "msg": "persisted run 2 with 1 answers to results.db", "logger": "pipeline"}
+{"ts": 1788757277.196, "level": "INFO", "msg": "asked: What is the leave policy?", "logger": "pipeline"}
+{"ts": 1788757277.584, "level": "INFO", "msg": "asked: What is the leave policy?", "logger": "pipeline"}
+{"ts": 1788757664.108, "level": "INFO", "msg": "asked: What is the leave policy?", "logger": "pipeline"}
+{"ts": 1788757667.988, "level": "INFO", "msg": "asked: What is the leave policy?", "logger": "pipeline"}
+{"ts": 1788757827.891, "level": "INFO", "msg": "asked: How does the procurement approval proces", "logger": "pipeline"}
+{"ts": 1788757828.731, "level": "INFO", "msg": "asked: How does the procurement approval proces", "logger": "pipeline"}
+{"ts": 1788757970.17, "level": "INFO", "msg": "asked: RAG", "logger": "pipeline"}
+{"ts": 1788757970.664, "level": "INFO", "msg": "asked: RAG", "logger": "pipeline"}
+{"ts": 1788757972.857, "level": "INFO", "msg": "asked: RAG", "logger": "pipeline"}
+{"ts": 1788757973.985, "level": "INFO", "msg": "asked: RAG", "logger": "pipeline"}
+{"ts": 1788767412.648, "level": "INFO", "msg": "asked: What is the leave policy?", "logger": "pipeline"}
+{"ts": 1788767413.633, "level": "INFO", "msg": "asked: What is the leave policy?", "logger": "pipeline"}
+{"ts": 1788767456.321, "level": "INFO", "msg": "asked: What is the leave policy?", "logger": "pipeline"}
+{"ts": 1788767457.711, "level": "INFO", "msg": "asked: What is the leave policy?", "logger": "pipeline"}
+{"ts": 1788768209.84, "level": "INFO", "msg": "asked: Hello what's up", "logger": "pipeline"}
+{"ts": 1788768210.223, "level": "INFO", "msg": "asked: Hello what's up", "logger": "pipeline"}
+{"ts": 1788768258.237, "level": "INFO", "msg": "asked: What is the leave policy?", "logger": "pipeline"}
+{"ts": 1788768259.714, "level": "INFO", "msg": "asked: What is the leave policy?", "logger": "pipeline"}
+{"ts": 1788768411.539, "level": "INFO", "msg": "asked: What is the leave policy?", "logger": "pipeline"}
+{"ts": 1788768416.185, "level": "INFO", "msg": "asked: What is the leave policy?", "logger": "pipeline"}
+{"ts": 1788768434.095, "level": "INFO", "msg": "asked: How does the procurement approval proces", "logger": "pipeline"}
+{"ts": 1788768439.19, "level": "INFO", "msg": "asked: How does the procurement approval proces", "logger": "pipeline"}
+{"ts": 1788768462.579, "level": "INFO", "msg": "asked: What's the policy on bringing pets to th", "logger": "pipeline"}
+{"ts": 1788768465.913, "level": "INFO", "msg": "asked: What's the policy on bringing pets to th", "logger": "pipeline"}

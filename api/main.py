@@ -56,24 +56,16 @@ app = FastAPI(
     version="1.0.0",
 )
 
-
-# ─────────────────────────────────────────────────────────────────────────────
-# 1c — Add the /ask_batched endpoint (non-streaming reference).
-#
-# Translate W3 Question → W2 _PipelineQuestion(text=q.question), then call
-# _pipeline_ask_llm, then translate the W2 Answer → W3 Answer.
-#
-# Shape:
-#   @app.post("/ask_batched", response_model=Answer)
-#   async def ask_batched(q: Question) -> Answer:
-#       pipeline_q = _PipelineQuestion(text=q.question)
-#       pipeline_ans = await _pipeline_ask_llm(pipeline_q)
-#       return Answer(
-#           content=pipeline_ans.text,
-#           cost_usd=pipeline_ans.cost_usd,
-#           retries=pipeline_ans.retries,
-#       )
-# ─────────────────────────────────────────────────────────────────────────────
+## Week 2 assignment — request counting middleware
+request_counts: dict[str, int] = {}
+@app.middleware("http")
+async def count_requests(request, call_next):
+    path = request.url.path
+    if path == "/metrics":
+        return await call_next(request)
+    request_counts[path] = request_counts.get(path, 0) + 1
+    response = await call_next(request)
+    return response
 
 # TODO 1c — add /ask_batched here
 @app.post("/ask_batched", response_model=Answer)
@@ -125,3 +117,8 @@ async def ask(q: Question):
     return StreamingResponse(
         stream_answer(q.question), 
         media_type="text/plain")
+    
+    
+@app.get("/metrics")
+async def metrics():
+    return {"endpoints:": request_counts, "total": sum(request_counts.values())}

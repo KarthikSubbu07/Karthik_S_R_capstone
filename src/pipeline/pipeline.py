@@ -1,21 +1,3 @@
-"""pipeline.py — Week 2 hands-on starter.
-
-We'll fill in the TODOs together during the live session. The pieces:
-
-    Step 2 — async def ask_llm                 (one call)
-    Step 3 — ask_llm_with_retry                (exponential backoff)
-    Step 4 — run_batch with asyncio.gather     (parallel fan-out)
-    Step 5 — JSON-formatted structured logging
-
-For the live demo we call ``fake_ask_llm`` from ``fake_llm.py`` —
-no API quota, no network flakiness, and a ``fail_rate`` knob so retries
-fire on demand. In the lab you'll swap to the real ``AsyncOpenAI`` client
-(same ``Question``/``Answer`` shape — only one import changes).
-
-Run it (after the TODOs are filled):
-    python pipeline.py           # fail_rate = 0.0  (clean parallel run)
-    python pipeline.py 0.4       # fail_rate = 0.4  (forces retries)
-"""
 from __future__ import annotations
 
 import argparse
@@ -25,44 +7,82 @@ import time
 import csv
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+from openai import AsyncOpenAI
+from pydantic import BaseModel, Field
+
+# Pipeline's internal Question type (W2 schema with text field)
+class Question(BaseModel):
+    """Internal pipeline question (not the public API type)."""
+    text: str
+
+# Pipeline's internal Answer type - extends fake_llm.Answer with W4 fields  
+class Answer(BaseModel):
+    """Internal pipeline answer (W2 base + W4 extensions)."""
+    content: str
+    cost_usd: float = 0.0001
+    retries: int = 0
+    confidence: float = Field(1.0, ge=0.0, le=1.0)
+    sources: list[str] = Field(default_factory=list)
+    schema_version: str = "v1"
 
 # Live-session stand-in. Same Pydantic shape as the real call.
 try:
     from .logging_config import get_logger
     from .settings import Settings, RunSummary
+    # from .models import Question
 except ImportError:    
     from logging_config import get_logger
     from settings import Settings, RunSummary
+    # from models import Question
     
 log = get_logger("pipeline")
-
 _settings_for_import = Settings()
 
 
 if _settings_for_import.use_fake:
     try:
-        from .fake_llm import Question, Answer, fake_ask_llm, FakeLLMError
+        from .fake_llm import fake_ask_llm, FakeLLMError
     except ImportError:
-        from fake_llm import Question, Answer, fake_ask_llm, FakeLLMError
+        from fake_llm import fake_ask_llm, FakeLLMError
 else:
     from dotenv import load_dotenv
     from openai import AsyncOpenAI
-    from pydantic import BaseModel
     
     load_dotenv()
     _client = AsyncOpenAI(
         api_key=os.environ.get("OPENAI_API_KEY"),
         base_url=os.environ.get("OPENAI_BASE_URL")
-    )
-    
-    class Question(BaseModel):
-        text: str
-
-    class Answer(BaseModel):
-        question: str
-        text: str
-        cost_usd: float
-        retries: int = 0
+    )    
+        
+        
+## Tokle Schema for structured output
+ANSWER_TOOL:dict = {
+    "type": "function",
+    "function": {
+        "name": "answer_question",
+        "description": "Returns a structured output for the answer with the following properties: content, confidence, and sources.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "content": {
+                    "type": "string",
+                    "description": "The answer in 2-4 sentences.",
+                },
+                "confidence": {
+                    "type": "number",
+                    "description": "Confidence score between 0 and 1.",
+                },
+                "sources": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Sources for the answer (can be empty).",
+                },                 
+            },
+            "required": ["content", "confidence", "sources"]
+        }
+    }
+}    
     
 # Adding a load_questions function
 def load_questions(csv_path: str | Path = None) -> list[Question]:
@@ -80,25 +100,56 @@ async def ask_llm(q: Question, fail_rate: float = 0.0) -> Answer:
     """One call. Live demo: fake. Lab: real AsyncOpenAI (same signature)."""
     log.info(f"asked: {q.text[:40]}")
     if _settings_for_import.use_fake:
-        answer =  await fake_ask_llm(q, fail_rate=fail_rate)
+        ans = await fake_ask_llm(q, fail_rate=fail_rate)
+        print(ans)
+        return Answer(
+            content=args["content"],
+            confidence=args["confidence"],
+            sources=args.get("sources", []),
+            cost_usd=0.0,
+            retries=attempt,
+            schema_version="v1",
+        )
     else:
         # Implement the real AsyncOpenAI call here
-        response = await _client.chat.completions.create(
-            model=_settings_for_import.model,
-            messages=[
-                {"role": "user", 
-                 "content": q.text}
-            ]
-        )
-        answer = Answer(
-            question=q.text,
-            text=response.choices[0].message.content,
-            cost_usd=0.00,  # Replace with actual cost calculation if available
-        )
-    log.info(f"asked: {q.text[:40]}")
-    # TODO (Step 5): once logging is configured, also log here, e.g.
-    #                log.info(f"asked: {q.text[:40]}")
-    return answer
+        for attempt in range(_settings_for_import.max_retries + 1):
+            try:
+                response = await _client.chat.completions.create(
+                    model=_settings_for_import.model,
+                    messages=[
+                        {"role": "user", 
+                        "content": q.text}
+                    ],
+                    tools=[ANSWER_TOOL],
+                    tool_choice={"type": "function",
+                                "function": {"name": "answer_question"}},
+                )
+                tool_calls = response.choices[0].message.tool_calls
+                if not tool_calls:
+                    raise ValueError("No tool calls found in the response.")
+                tool_args = tool_calls[0].function.arguments
+                args = json.loads(tool_args)
+                
+                ## find the real cost
+                # usage = response.usage
+                # cost = co
+                
+                log.info(f"asked: {q.text[:40]}")
+
+                return Answer(
+                    content=args["content"],
+                    confidence=args["confidence"],
+                    sources=args.get("sources", []),
+                    cost_usd=0.0,
+                    retries=attempt,
+                    schema_version="v1",
+                )
+            
+            except Exception as exc:
+                log.error(f"Attempt {attempt} failed for question: {q.text[:40]} ({exc})")
+                if attempt == _settings_for_import.max_retries:
+                    raise
+                await asyncio.sleep(2**attempt)
 
 
 # ---------- Step 3: retry with exponential backoff ----------

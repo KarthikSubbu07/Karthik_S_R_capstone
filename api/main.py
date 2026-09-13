@@ -44,6 +44,9 @@ class Answer(BaseModel):
     content: str
     cost_usd: float
     retries: int
+    confidence: float = 1.0
+    sources: list[str] = []
+    schema_version: str = "v1"
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -72,10 +75,14 @@ async def count_requests(request, call_next):
 async def ask_batched(q: Question) -> Answer:
     pipeline_q = _PipelineQuestion(text=q.question)
     pipeline_ans = await _pipeline_ask_llm(pipeline_q)
+    print(    pipeline_ans)
     return Answer(
-        content=pipeline_ans.text,
+        content=pipeline_ans.content,
+        confidence=pipeline_ans.confidence,
+        sources=pipeline_ans.sources,
         cost_usd=pipeline_ans.cost_usd,
         retries=pipeline_ans.retries,
+        schema_version=pipeline_ans.schema_version
     )
            
 # ─────────────────────────────────────────────────────────────────────────────

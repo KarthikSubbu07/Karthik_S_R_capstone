@@ -38,6 +38,11 @@ htmlcov/
 .cache
 .pytest_cache/
 
+# Logs
+logs/
+*.log
+*.log.*
+
 
 # IDE / Editor specific configurations
 .vscode/

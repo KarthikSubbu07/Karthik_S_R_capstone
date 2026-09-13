@@ -411,3 +411,73 @@
 {"ts": 1788885102.534, "level": "INFO", "msg": "asked: What is RAG?", "logger": "pipeline"}
 {"ts": 1788885551.651, "level": "INFO", "msg": "asked: What is RAG?", "logger": "pipeline"}
 {"ts": 1788885552.917, "level": "INFO", "msg": "asked: What is RAG?", "logger": "pipeline"}
+{"ts": 1789302339.797, "level": "INFO", "msg": "asked: What is RAG in 2 sentences?", "logger": "pipeline"}
+{"ts": 1789302562.914, "level": "INFO", "msg": "asked: What is RAG in 2 sentences?", "logger": "pipeline"}
+{"ts": 1789302603.7, "level": "INFO", "msg": "asked: What is RAG in 2 sentences?", "logger": "pipeline"}
+{"ts": 1789302603.967, "level": "ERROR", "msg": "Attempt 0 failed for question: What is RAG in 2 sentences? (Object of type set is not JSON serializable)", "logger": "pipeline"}
+{"ts": 1789302604.971, "level": "ERROR", "msg": "Attempt 1 failed for question: What is RAG in 2 sentences? (Object of type set is not JSON serializable)", "logger": "pipeline"}
+{"ts": 1789302606.974, "level": "ERROR", "msg": "Attempt 2 failed for question: What is RAG in 2 sentences? (Object of type set is not JSON serializable)", "logger": "pipeline"}
+{"ts": 1789302675.142, "level": "INFO", "msg": "asked: What is RAG in 2 sentences?", "logger": "pipeline"}
+{"ts": 1789302678.191, "level": "INFO", "msg": "asked: What is RAG in 2 sentences?", "logger": "pipeline"}
+{"ts": 1789302678.191, "level": "ERROR", "msg": "Attempt 0 failed for question: What is RAG in 2 sentences? (2 validation errors for Answer\nquestion\n  Field required [type=missing, input_value={'content': 'RAG, or Retr... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntext\n  Field required [type=missing, input_value={'content': 'RAG, or Retr... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing)", "logger": "pipeline"}
+{"ts": 1789302680.713, "level": "INFO", "msg": "asked: What is RAG in 2 sentences?", "logger": "pipeline"}
+{"ts": 1789302680.714, "level": "ERROR", "msg": "Attempt 1 failed for question: What is RAG in 2 sentences? (2 validation errors for Answer\nquestion\n  Field required [type=missing, input_value={'content': 'RAG (Retriev... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntext\n  Field required [type=missing, input_value={'content': 'RAG (Retriev... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing)", "logger": "pipeline"}
+{"ts": 1789302684.505, "level": "INFO", "msg": "asked: What is RAG in 2 sentences?", "logger": "pipeline"}
+{"ts": 1789302684.506, "level": "ERROR", "msg": "Attempt 2 failed for question: What is RAG in 2 sentences? (2 validation errors for Answer\nquestion\n  Field required [type=missing, input_value={'content': 'RAG, or Retr... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\ntext\n  Field required [type=missing, input_value={'content': 'RAG, or Retr... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing)", "logger": "pipeline"}
+{"ts": 1789302776.233, "level": "INFO", "msg": "asked: What is RAG in 2 sentences?", "logger": "pipeline"}
+{"ts": 1789302779.253, "level": "INFO", "msg": "asked: What is RAG in 2 sentences?", "logger": "pipeline"}
+{"ts": 1789302948.287, "level": "INFO", "msg": "asked: What is RAG in 2 sentences?", "logger": "pipeline"}
+{"ts": 1789302950.988, "level": "INFO", "msg": "asked: What is RAG in 2 sentences?", "logger": "pipeline"}
+{"ts": 1789303040.978, "level": "INFO", "msg": "asked: What is RAG?", "logger": "pipeline"}
+{"ts": 1789303043.098, "level": "INFO", "msg": "asked: What is RAG?", "logger": "pipeline"}
+{"ts": 1789303114.08, "level": "INFO", "msg": "asked: What is RAG?", "logger": "pipeline"}
+{"ts": 1789303116.396, "level": "INFO", "msg": "asked: What is RAG?", "logger": "pipeline"}
+{"ts": 1789303232.468, "level": "INFO", "msg": "asked: What is RAG", "logger": "pipeline"}
+{"ts": 1789303234.726, "level": "INFO", "msg": "asked: What is RAG", "logger": "pipeline"}
+{"ts": 1789303254.073, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303256.425, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303651.045, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303653.442, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303653.443, "level": "ERROR", "msg": "Attempt 0 failed for question: What is Football (1 validation error for Answer\ncontent\n  Field required [type=missing, input_value={'question': 'What is Foo... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing)", "logger": "pipeline"}
+{"ts": 1789303656.003, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303656.003, "level": "ERROR", "msg": "Attempt 1 failed for question: What is Football (1 validation error for Answer\ncontent\n  Field required [type=missing, input_value={'question': 'What is Foo... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing)", "logger": "pipeline"}
+{"ts": 1789303659.588, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303659.588, "level": "ERROR", "msg": "Attempt 2 failed for question: What is Football (1 validation error for Answer\ncontent\n  Field required [type=missing, input_value={'question': 'What is Foo... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing)", "logger": "pipeline"}
+{"ts": 1789303687.273, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303688.894, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303688.894, "level": "ERROR", "msg": "Attempt 0 failed for question: What is Football (1 validation error for Answer\ncontent\n  Field required [type=missing, input_value={'question': 'What is Foo... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing)", "logger": "pipeline"}
+{"ts": 1789303691.515, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303691.515, "level": "ERROR", "msg": "Attempt 1 failed for question: What is Football (1 validation error for Answer\ncontent\n  Field required [type=missing, input_value={'question': 'What is Foo... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing)", "logger": "pipeline"}
+{"ts": 1789303695.34, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303695.34, "level": "ERROR", "msg": "Attempt 2 failed for question: What is Football (1 validation error for Answer\ncontent\n  Field required [type=missing, input_value={'question': 'What is Foo... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing)", "logger": "pipeline"}
+{"ts": 1789303729.118, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303731.476, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303731.476, "level": "ERROR", "msg": "Attempt 0 failed for question: What is Football (1 validation error for Answer\ncontent\n  Field required [type=missing, input_value={'question': 'What is Foo... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing)", "logger": "pipeline"}
+{"ts": 1789303734.248, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303734.248, "level": "ERROR", "msg": "Attempt 1 failed for question: What is Football (1 validation error for Answer\ncontent\n  Field required [type=missing, input_value={'question': 'What is Foo... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing)", "logger": "pipeline"}
+{"ts": 1789303737.8, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303737.8, "level": "ERROR", "msg": "Attempt 2 failed for question: What is Football (1 validation error for Answer\ncontent\n  Field required [type=missing, input_value={'question': 'What is Foo... 'schema_version': 'v1'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing)", "logger": "pipeline"}
+{"ts": 1789303772.969, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303775.299, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303796.011, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303798.366, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303820.91, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303823.625, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303842.397, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303844.758, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303932.434, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303934.968, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789303950.795, "level": "INFO", "msg": "asked: What's football", "logger": "pipeline"}
+{"ts": 1789303953.231, "level": "INFO", "msg": "asked: What's football", "logger": "pipeline"}
+{"ts": 1789304015.538, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789304018.538, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789304018.538, "level": "ERROR", "msg": "Attempt 0 failed for question: What is Football (2 validation errors for Answer\ncontent\n  Input should be a valid string [type=string_type, input_value=1, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type\nsources\n  Input should be a valid list [type=list_type, input_value=1, input_type=int]\n    For further information visit https://errors.pydantic.dev/2.13/v/list_type)", "logger": "pipeline"}
+{"ts": 1789304021.252, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789304069.061, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789304071.568, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789304089.065, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789304091.142, "level": "INFO", "msg": "asked: What is Football", "logger": "pipeline"}
+{"ts": 1789304158.666, "level": "INFO", "msg": "asked: What is RAG?", "logger": "pipeline"}
+{"ts": 1789304161.629, "level": "INFO", "msg": "asked: What is RAG?", "logger": "pipeline"}
+{"ts": 1789304171.25, "level": "INFO", "msg": "asked: What's football", "logger": "pipeline"}
+{"ts": 1789304173.432, "level": "INFO", "msg": "asked: What's football", "logger": "pipeline"}

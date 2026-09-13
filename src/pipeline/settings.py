@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field
 from pathlib import Path
 
 class Settings(BaseModel):
-    questions_csv: Path  = Path(__file__).parent / "data" / "questions.csv"
+    questions_csv: Path  = Path(__file__).resolve().parent.parent.parent / "data" / "questions.csv"
     results_json:  Path  = Path("results.json")
     results_db:    Path  = Path("results.db")
     batch_size:    int   = Field(5,   gt=0, le=20)

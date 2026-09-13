@@ -25,7 +25,7 @@ class JsonFormatter(logging.Formatter):
 
 def get_logger(
     name: str = "pipeline",
-    log_path: str | Path = "logs/pipeline.log",
+    log_path: str | Path = None,
 ) -> logging.Logger:
     """Return a configured logger that writes JSON lines to a file.
 
@@ -37,6 +37,8 @@ def get_logger(
     if log.handlers:                  # already configured — don't double-attach
         return log
 
+    if log_path is None:
+        log_path = Path(__file__).resolve().parent.parent.parent / "logs" / "pipeline.log"
     Path(log_path).parent.mkdir(parents=True, exist_ok=True)
     fh = logging.FileHandler(log_path)
     fh.setFormatter(JsonFormatter())

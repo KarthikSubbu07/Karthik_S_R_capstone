@@ -481,3 +481,16 @@
 {"ts": 1789304161.629, "level": "INFO", "msg": "asked: What is RAG?", "logger": "pipeline"}
 {"ts": 1789304171.25, "level": "INFO", "msg": "asked: What's football", "logger": "pipeline"}
 {"ts": 1789304173.432, "level": "INFO", "msg": "asked: What's football", "logger": "pipeline"}
+{"ts": 1789366590.294, "level": "INFO", "msg": "asked: Explain RAG", "logger": "pipeline"}
+{"ts": 1789366592.683, "level": "INFO", "msg": "asked: Explain RAG", "logger": "pipeline"}
+{"ts": 1789366627.825, "level": "INFO", "msg": "asked: Explain RAG", "logger": "pipeline"}
+{"ts": 1789366629.648, "level": "INFO", "msg": "asked: Explain RAG", "logger": "pipeline"}
+{"ts": 1789366757.124, "level": "INFO", "msg": "asked: What is RAG", "logger": "pipeline"}
+{"ts": 1789366759.385, "level": "INFO", "msg": "asked: What is RAG", "logger": "pipeline"}
+{"ts": 1789366856.984, "level": "INFO", "msg": "asked: What is RAG", "logger": "pipeline"}
+{"ts": 1789366859.32, "level": "INFO", "msg": "asked: What is RAG", "logger": "pipeline"}
+{"ts": 1789367047.896, "level": "INFO", "msg": "asked: Explain RAG", "logger": "pipeline"}
+{"ts": 1789382883.181, "level": "INFO", "msg": "asked: Explain RAG in one line", "logger": "pipeline"}
+{"ts": 1789383267.279, "level": "INFO", "msg": "asked: Explain RAG in one line", "logger": "pipeline"}
+{"ts": 1789383309.603, "level": "INFO", "msg": "asked: Explain RAG in one line", "logger": "pipeline"}
+{"ts": 1789383521.53, "level": "INFO", "msg": "asked: What is RAG", "logger": "pipeline"}

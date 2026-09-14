@@ -95,3 +95,24 @@ Returns `{"status": "ok"}` with HTTP 200 when the service is alive.
 - `tests/test_api.py::test_health_returns_ok` — /health contract.
 - _(In W4)_ `tests/test_contract.py` — snapshot-test the `/openapi.json` to
   detect accidental contract breakage in CI.
+
+
+### Cost budget (added W4)
+
+Capstone `/ask_batched` calls cost ≤ **$0.0001 each** on average over a
+representative batch of 10 questions. This is a soft budget — the
+intent is to fail loud in observability if average cost suddenly
+doubles, not to reject individual expensive calls.
+
+The cohort confirms or refines this number against the actual results
+of Lab Step 3 (`scripts/compare_models.py`).
+
+### Chosen default model (added W4)
+
+The default `Settings.model` is **`gpt-4o-mini`** for the lab. `gpt-4o`
+is available via the same code path for harder questions or when the
+mini model's confidence is low.
+
+I would continue to proceed with gpt-40-mini because the cost doesnt justify the increase in quality.
+So far based on the small dataset of 10 Q's we have compared and based on eyeballing the results, 40 doesnt justify the huge cost it bears compare dto mini.
+Mini is still able to give reasonable and pretty much high/similar Quality responses and hence its good to stick with mini.

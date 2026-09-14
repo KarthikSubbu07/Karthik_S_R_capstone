@@ -26,14 +26,8 @@ from pydantic import BaseModel
 # W2 pipeline — the underlying engine
 from src.pipeline.pipeline import ask_llm as _pipeline_ask_llm, stream_answer
 from src.pipeline.pipeline import Question as _PipelineQuestion
-
-# try:
-#     from src.pipeline.pipeline import ask_llm as _pipeline_ask_llm, stream_answer
-#     from src.pipeline.pipeline import Question as _PipelineQuestion
-#     # from .models import Question
-# except ImportError:    
-#     from src.pipeline.pipeline import ask_llm as _pipeline_ask_llm, stream_answer
-#     from src.pipeline.pipeline import Question as _PipelineQuestion
+from src.pipeline.pipeline import _settings_for_import
+from src.pipeline.store import connect, save_answer
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s  %(levelname)s  %(message)s")
 log = logging.getLogger(__name__)
@@ -83,7 +77,19 @@ async def count_requests(request, call_next):
 async def ask_batched(q: Question) -> Answer:
     pipeline_q = _PipelineQuestion(text=q.question)
     pipeline_ans = await _pipeline_ask_llm(pipeline_q)
-    print(    pipeline_ans)
+    db_path = Path(__file__).resolve().parents[2] / "data" / "answers.db"
+    with connect(db_path) as conn:
+        save_answer(
+            conn,
+            question=q.question,
+            content=pipeline_ans.content,
+            retries=pipeline_ans.retries,
+            cost_usd=pipeline_ans.cost_usd,
+            model=_settings_for_import.model,
+            confidence=pipeline_ans.confidence,
+            sources=pipeline_ans.sources,
+            schema_version=pipeline_ans.schema_version,
+        )
     return Answer(
         content=pipeline_ans.content,
         confidence=pipeline_ans.confidence,

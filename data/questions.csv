@@ -1,21 +1,11 @@
-text
-What is retrieval-augmented generation in one sentence?
-Name three real-world uses of vector databases.
-Why might an LLM produce confident but incorrect answers?
-What is a Pydantic BaseModel and when would you use one?
-Explain async and await in plain language.
-What is the difference between a chatbot and an agent?
-List three common chunking strategies for documents.
-Why do we use exponential backoff for retries?
-Give a one-line definition of an embedding.
-When would you choose fine-tuning over RAG?
-What is the role of a system prompt?
-Explain what asyncio.gather does in one sentence.
-What is the purpose of a .env file?
-Why is structured logging useful for AI systems?
-Name two trade-offs of long-context prompting.
-What is the role of a retriever in a RAG pipeline?
-Give one example of when NOT to use an LLM.
-What does temperature do in an LLM call?
-What is the difference between sync and async I/O?
-What is the difference between batching and streaming?
+question
+What is Retrieval-Augmented Generation, in two sentences?
+What is the difference between a token and a word?
+When should I use tool-calling instead of plain JSON mode?
+How does streaming reduce perceived latency for an LLM app?
+What does response.usage tell you that tiktoken can't?
+List two production timeouts every LLM app should set, and typical values.
+Why is the W3 API contract worth preserving as the internals evolve?
+What does "additive change" mean in the context of API versioning?
+Name two reasons to consider running a local model via Ollama.
+What is the smallest unit a schema_version field should change in response to?

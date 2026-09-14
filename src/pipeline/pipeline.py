@@ -12,10 +12,12 @@ from openai import AsyncOpenAI
 from pydantic import BaseModel, Field
 from typing import AsyncIterator
 
+
 # Pipeline's internal Question type (W2 schema with text field)
 class Question(BaseModel):
     """Internal pipeline question (not the public API type)."""
-    text: str
+    question: str
+    # text: str
 
 # Pipeline's internal Answer type - extends fake_llm.Answer with W4 fields  
 class Answer(BaseModel):
@@ -31,10 +33,12 @@ class Answer(BaseModel):
 try:
     from .logging_config import get_logger
     from .settings import Settings, RunSummary
+    from .cost import compute_cost_usd
     # from .models import Question
 except ImportError:    
     from logging_config import get_logger
     from settings import Settings, RunSummary
+    from cost import compute_cost_usd
     # from models import Question
     
 log = get_logger("pipeline")
@@ -97,61 +101,69 @@ def load_questions(csv_path: str | Path = None) -> list[Question]:
     return questions
 
 # ---------- Step 2: one async call ----------
-async def ask_llm(q: Question, fail_rate: float = 0.0) -> Answer:
-    """One call. Live demo: fake. Lab: real AsyncOpenAI (same signature)."""
-    log.info(f"asked: {q.text[:40]}")
-    if _settings_for_import.use_fake:
-        ans = await fake_ask_llm(q, fail_rate=fail_rate)
-        print(ans)
-        return Answer(
-            content=args["content"],
-            confidence=args["confidence"],
-            sources=args.get("sources", []),
-            cost_usd=0.0,
-            retries=attempt,
-            schema_version="v1",
-        )
-    else:
-        # Implement the real AsyncOpenAI call here
-        for attempt in range(_settings_for_import.max_retries + 1):
-            try:
-                response = await _client.chat.completions.create(
-                    model=_settings_for_import.model,
-                    messages=[
-                        {"role": "user", 
-                        "content": q.text}
-                    ],
-                    tools=[ANSWER_TOOL],
-                    tool_choice={"type": "function",
-                                "function": {"name": "answer_question"}},
-                )
-                tool_calls = response.choices[0].message.tool_calls
-                if not tool_calls:
-                    raise ValueError("No tool calls found in the response.")
-                tool_args = tool_calls[0].function.arguments
-                args = json.loads(tool_args)
-                
-                ## find the real cost
-                # usage = response.usage
-                # cost = co
-                
-                log.info(f"asked: {q.text[:40]}")
+async def ask_llm(q: Question, settings: Settings | None = None) -> Answer:
+    """Call the LLM with tool-calling, returning a structured Answer.
 
-                return Answer(
-                    content=args["content"],
-                    confidence=args["confidence"],
-                    sources=args.get("sources", []),
-                    cost_usd=0.0,
-                    retries=attempt,
-                    schema_version="v1",
-                )
-            
-            except Exception as exc:
-                log.error(f"Attempt {attempt} failed for question: {q.text[:40]} ({exc})")
-                if attempt == _settings_for_import.max_retries:
-                    raise
-                await asyncio.sleep(2**attempt)
+    Retries on transient failures. Real cost computed from response.usage.
+    """
+    settings = settings or Settings()
 
+    if settings.use_fake:
+        content = await fake_ask_llm(q.question)
+        return Answer(content=content, cost_usd=0.0, retries=0)
+
+    # client = AsyncOpenAI(api_key=settings.OPENAI_API_KEY)
+    last_err: Exception | None = None
+
+    for attempt in range(settings.max_retries + 1):
+        try:
+            resp = await _client.chat.completions.create(
+                model=settings.model,
+                messages=[{"role": "user", "content": q.question}],
+                tools=[ANSWER_TOOL],
+                tool_choice={
+                    "type": "function",
+                    "function": {"name": "answer_question"},
+                },
+            )
+
+            # Parse the tool call's structured arguments.
+            tool_calls = resp.choices[0].message.tool_calls or []
+            if not tool_calls:
+                # Defensive — should not happen because tool_choice forces it,
+                # but if a provider misbehaves we want a clear error.
+                raise RuntimeError("LLM did not call the answer_question tool")
+            args_json = tool_calls[0].function.arguments
+            args = json.loads(args_json)
+
+            # Compute real cost from usage.
+            usage = resp.usage
+            cost = compute_cost_usd(
+                settings.model,
+                usage.prompt_tokens if usage else 0,
+                usage.completion_tokens if usage else 0,
+            )
+
+            return Answer(
+                content=args["content"],
+                confidence=args["confidence"],
+                sources=args.get("sources", []),
+                cost_usd=cost,
+                retries=attempt,
+                schema_version="v1",
+            )
+
+        except Exception as exc:
+            last_err = exc
+            if attempt < settings.max_retries:
+                logger.warning(
+                    "ask_llm attempt %d failed: %s — retrying", attempt + 1, exc
+                )
+                await asyncio.sleep(settings.retry_delay_s * (2 ** attempt))
+                continue
+            raise
+
+    raise RuntimeError(f"ask_llm exhausted retries: {last_err}")  # unreachable
 
 # ---------- Step 3: retry with exponential backoff ----------
 async def ask_llm_with_retry(
@@ -191,7 +203,7 @@ async def run_batch_stream(
     results: list[Answer] = []
     for coro in asyncio.as_completed(tasks):
         result = await coro
-        print(f"{result.text[:60]}")
+        print(f"{result.question[:60]}")
         results.append(result)
 
     return results

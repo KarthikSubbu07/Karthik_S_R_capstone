@@ -35,13 +35,6 @@ def compute_cost_usd(model: str, prompt_tokens: int, completion_tokens: int) -> 
         # = (15 + 30) / 1_000_000
         # = 0.000045 USD
     """
-    # TODO Step 2c — implement the cost formula.
-    #
-    # Steps:
-    # 1) Look up the model in RATES. If missing, return 0.0.
-    # 2) Multiply prompt_tokens × in_rate, completion_tokens × out_rate.
-    # 3) Divide by 1_000_000 (rates are per-million).
-    # 4) Return the float.
     try:
         in_rate, out_rate = RATES.get(model, (0.0, 0.0))
         total = (prompt_tokens * in_rate + completion_tokens * out_rate) / 1_000_000

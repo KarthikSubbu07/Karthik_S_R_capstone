@@ -10,6 +10,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from openai import AsyncOpenAI
 from pydantic import BaseModel, Field
+from typing import AsyncIterator
 
 # Pipeline's internal Question type (W2 schema with text field)
 class Question(BaseModel):
@@ -230,6 +231,36 @@ async def run_in_batches(
         answers.extend(batch_answers)
         await asyncio.sleep(0.1)  # yield control to the event loop
     return answers
+
+# ─── Streaming endpoint (Step 2a, 2b) ───────────────────────────────────────
+async def stream_answer(question: str, settings: Settings | None = None) -> AsyncIterator[str]:
+    """Yield content tokens as they arrive from the LLM.
+
+    W3 simulated this with asyncio.sleep. W4 replaces with real chunks.
+    """
+    # settings = settings or Settings()
+
+    if _settings_for_import.use_fake:
+        # Offline path — yield words slowly. Kept for tests.
+        full = await fake_ask_llm(question)
+        for word in full.split(" "):
+            await asyncio.sleep(0.05)
+            yield word + " "
+        return
+    else:
+        # client = AsyncOpenAI(api_key=_settings_for_import.openai_api_key)
+        stream = await _client.chat.completions.create(
+            model=_settings_for_import.model,
+            messages=[{"role": "user", "content": question}],
+            stream=True,
+        )
+        
+        async for chunk in stream:
+            if not chunk.choices:
+                continue
+            delta = chunk.choices[0].delta
+            if delta.content:
+                yield delta.content
 
 # ---------- main ----------
 if __name__ == "__main__":

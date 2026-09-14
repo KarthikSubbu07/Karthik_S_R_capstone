@@ -24,8 +24,16 @@ from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
 # W2 pipeline — the underlying engine
-from src.pipeline.pipeline import ask_llm as _pipeline_ask_llm
+from src.pipeline.pipeline import ask_llm as _pipeline_ask_llm, stream_answer
 from src.pipeline.pipeline import Question as _PipelineQuestion
+
+# try:
+#     from src.pipeline.pipeline import ask_llm as _pipeline_ask_llm, stream_answer
+#     from src.pipeline.pipeline import Question as _PipelineQuestion
+#     # from .models import Question
+# except ImportError:    
+#     from src.pipeline.pipeline import ask_llm as _pipeline_ask_llm, stream_answer
+#     from src.pipeline.pipeline import Question as _PipelineQuestion
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s  %(levelname)s  %(message)s")
 log = logging.getLogger(__name__)
@@ -94,38 +102,15 @@ async def ask_batched(q: Question) -> Answer:
 async def health() -> dict:
     return {"status": "ok"}
 
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-# 1f — Add stream_answer + the streaming /ask endpoint.
-#
-# stream_answer(question_text: str) is an async generator that:
-#   - builds _PipelineQuestion(text=question_text)
-#   - awaits _pipeline_ask_llm to get a full pipeline Answer
-#   - yields words from pipeline_ans.text.split(" ") with " " appended
-#   - awaits asyncio.sleep(0.05) between yields
-#
-# The /ask endpoint returns StreamingResponse(stream_answer(q.question), media_type="text/plain").
-# ─────────────────────────────────────────────────────────────────────────────
-
-# TODO 1f — add stream_answer + /ask here
-async def stream_answer(question_text: str):
-    pipeline_q = _PipelineQuestion(text=question_text)
-    pipeline_ans = await _pipeline_ask_llm(pipeline_q)
-    for word in pipeline_ans.text.split(" "):
-        yield word + " "
-        await asyncio.sleep(0.05)
-
-
 @app.post("/ask")
 async def ask(q: Question):
     """Streaming /ask endpoint."""
-    log.info("ask question=%r", q.question[:80])
-    return StreamingResponse(
-        stream_answer(q.question), 
-        media_type="text/plain")
-    
-    
+    """Real Streaming Response in text/plain."""
+    async def _gen():
+        async for chunk in stream_answer(q.question):
+            yield chunk
+    return StreamingResponse(_gen(), media_type="text/plain")
+       
 @app.get("/metrics")
 async def metrics():
     return {"endpoints:": request_counts, "total": sum(request_counts.values())}

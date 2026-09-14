@@ -2,7 +2,7 @@
 
 from http import client
 
-from api.main import app
+from src.api.main import app
 from fastapi.testclient import TestClient
 
 client = TestClient(app)

@@ -17,7 +17,6 @@ from typing import AsyncIterator
 class Question(BaseModel):
     """Internal pipeline question (not the public API type)."""
     question: str
-    # text: str
 
 # Pipeline's internal Answer type - extends fake_llm.Answer with W4 fields  
 class Answer(BaseModel):

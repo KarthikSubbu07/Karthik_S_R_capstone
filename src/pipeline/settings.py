@@ -12,6 +12,7 @@ class Settings(BaseModel):
     model:         str   = "gpt-4o-mini"
     use_fake:      bool  = False
     max_retries:   int   = Field(2, ge=0, le=10)
+    retry_delay_s: float = Field(1.0, ge=0.0)
 
 class RunSummary(BaseModel):
     started_at: float = time.time()

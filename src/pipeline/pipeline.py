@@ -13,7 +13,7 @@ from pydantic import BaseModel, Field
 from typing import AsyncIterator
 
 
-# Pipeline's internal Question type (W2 schema with text field)
+# Pipeline's internal Question type (W2 schema)
 class Question(BaseModel):
     """Internal pipeline question (not the public API type)."""
     question: str
@@ -44,12 +44,12 @@ log = get_logger("pipeline")
 _settings_for_import = Settings()
 
 
-if _settings_for_import.use_fake:
-    try:
-        from .fake_llm import fake_ask_llm, FakeLLMError
-    except ImportError:
-        from fake_llm import fake_ask_llm, FakeLLMError
-else:
+try:
+    from .fake_llm import fake_ask_llm, FakeLLMError
+except ImportError:
+    from fake_llm import fake_ask_llm, FakeLLMError
+
+if not _settings_for_import.use_fake:
     from dotenv import load_dotenv
     from openai import AsyncOpenAI
     
@@ -96,7 +96,7 @@ def load_questions(csv_path: str | Path = None) -> list[Question]:
     with open(csv_path, newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            questions.append(Question(text=row['text']))
+            questions.append(Question(question=row['text']))
     return questions
 
 # ---------- Step 2: one async call ----------
@@ -108,8 +108,12 @@ async def ask_llm(q: Question, settings: Settings | None = None) -> Answer:
     settings = settings or Settings()
 
     if settings.use_fake:
-        content = await fake_ask_llm(q.question)
-        return Answer(content=content, cost_usd=0.0, retries=0)
+        fake_answer = await fake_ask_llm(q)
+        return Answer(
+            content=fake_answer.text,
+            cost_usd=fake_answer.cost_usd,
+            retries=fake_answer.retries,
+        )
 
     # client = AsyncOpenAI(api_key=settings.OPENAI_API_KEY)
     last_err: Exception | None = None
@@ -155,7 +159,7 @@ async def ask_llm(q: Question, settings: Settings | None = None) -> Answer:
         except Exception as exc:
             last_err = exc
             if attempt < settings.max_retries:
-                logger.warning(
+                log.warning(
                     "ask_llm attempt %d failed: %s — retrying", attempt + 1, exc
                 )
                 await asyncio.sleep(settings.retry_delay_s * (2 ** attempt))
@@ -166,19 +170,19 @@ async def ask_llm(q: Question, settings: Settings | None = None) -> Answer:
 
 # ---------- Step 3: retry with exponential backoff ----------
 async def ask_llm_with_retry(
-    q: Question, tries: int = 3, fail_rate: float = 0.0
+    q: Question, tries: int = 3, settings: Settings | None = None
 ) -> Answer:
     """Retry up to ``tries`` times. Wait 1 s, 2 s, 4 s between attempts."""
     for attempt in range(tries):
         try:
-            ans = await ask_llm(q, fail_rate=fail_rate)
+            ans = await ask_llm(q, settings=settings)
             ans.retries = attempt
             return ans
 
         except Exception as exc:
             if attempt == tries-1:
                 raise
-            log.warning(f"attempt {attempt+1} failed for question: {q.text[:40]} ({exc})")
+            log.warning(f"attempt {attempt+1} failed for question: {q.question[:40]} ({exc})")
             await asyncio.sleep(2**attempt)
 
     raise NotImplementedError("Step 3 — wrap ask_llm with retry + exponential backoff")
@@ -202,7 +206,7 @@ async def run_batch_stream(
     results: list[Answer] = []
     for coro in asyncio.as_completed(tasks):
         result = await coro
-        print(f"{result.question[:60]}")
+        print(f"{result.content[:60]}")
         results.append(result)
 
     return results

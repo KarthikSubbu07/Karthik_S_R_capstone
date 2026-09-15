@@ -494,3 +494,13 @@
 {"ts": 1789383267.279, "level": "INFO", "msg": "asked: Explain RAG in one line", "logger": "pipeline"}
 {"ts": 1789383309.603, "level": "INFO", "msg": "asked: Explain RAG in one line", "logger": "pipeline"}
 {"ts": 1789383521.53, "level": "INFO", "msg": "asked: What is RAG", "logger": "pipeline"}
+{"ts": 1789437781.875, "level": "WARNING", "msg": "ask_llm attempt 1 failed: 'Question' object has no attribute 'question' \u2014 retrying", "logger": "pipeline"}
+{"ts": 1789437885.99, "level": "WARNING", "msg": "ask_llm attempt 1 failed: 'Question' object has no attribute 'text' \u2014 retrying", "logger": "pipeline"}
+{"ts": 1789438113.449, "level": "WARNING", "msg": "attempt 1 failed for question: What is RAG? (ask_llm() got an unexpected keyword argument 'fail_rate')", "logger": "pipeline"}
+{"ts": 1789438113.449, "level": "WARNING", "msg": "attempt 2 failed for question: What is RAG? (ask_llm() got an unexpected keyword argument 'fail_rate')", "logger": "pipeline"}
+{"ts": 1789438196.994, "level": "WARNING", "msg": "attempt 1 failed for question: What is RAG? (simulated)", "logger": "pipeline"}
+{"ts": 1789438196.994, "level": "WARNING", "msg": "attempt 2 failed for question: What is RAG? (simulated)", "logger": "pipeline"}
+{"ts": 1789438228.763, "level": "WARNING", "msg": "attempt 1 failed for question: What is RAG? (simulated)", "logger": "pipeline"}
+{"ts": 1789438228.763, "level": "WARNING", "msg": "attempt 2 failed for question: What is RAG? (simulated)", "logger": "pipeline"}
+{"ts": 1789438348.875, "level": "WARNING", "msg": "attempt 1 failed for question: What is RAG? (simulated)", "logger": "pipeline"}
+{"ts": 1789438348.875, "level": "WARNING", "msg": "attempt 2 failed for question: What is RAG? (simulated)", "logger": "pipeline"}

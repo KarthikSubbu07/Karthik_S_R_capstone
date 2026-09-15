@@ -61,5 +61,5 @@ from models import Question
 from settings import Settings
 for m in ['gpt-4o-mini', 'gpt-4o']:
   settings = Settings(use_fake=True, model=m, openai_api_key='sk-not-used')
-  ans = asyncio.run(ask_llm(Question(text='x')))
+  ans = asyncio.run(ask_llm(Question(question='x')))
   print(f'model={m}, content={ans.content[:30]}')

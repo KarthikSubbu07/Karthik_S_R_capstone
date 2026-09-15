@@ -30,8 +30,7 @@ from pathlib import Path
 # not the project root, so `from src.pipeline...` raises ModuleNotFoundError.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from src.pipeline.models import Question
-from src.pipeline.pipeline import ask_llm
+from src.pipeline.pipeline import Question, ask_llm
 from src.pipeline.settings import Settings
 from src.pipeline.store import connect, save_answer
 

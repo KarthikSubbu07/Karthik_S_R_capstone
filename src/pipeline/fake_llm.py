@@ -29,7 +29,7 @@ from pydantic import BaseModel
 
 
 class Question(BaseModel):
-    text: str
+    question: str
 
 
 class Answer(BaseModel):
@@ -161,10 +161,10 @@ async def fake_ask_llm(
     """
     await asyncio.sleep(random.uniform(min_latency, max_latency))
     if fail_rate > 0.0 and random.random() < fail_rate:
-        raise FakeLLMError(f"simulated transient failure: {q.text[:50]}")
+        raise FakeLLMError(f"simulated transient failure: {q.question[:50]}")
     return Answer(
-        question=q.text,
-        text=_pick(q.text),
+        question=q.question,
+        text=_pick(q.question),
         cost_usd=0.0001,
     )
 
@@ -173,9 +173,9 @@ if __name__ == "__main__":
     # Quick smoke test — `python fake_llm.py`
     async def _demo() -> None:
         questions = [
-            Question(text="What is RAG in one sentence?"),
-            Question(text="Why might an LLM hallucinate?"),
-            Question(text="What does temperature do in an LLM call?"),
+            Question(question="What is RAG in one sentence?"),
+            Question(question="Why might an LLM hallucinate?"),
+            Question(question="What does temperature do in an LLM call?"),
         ]
         for q in questions:
             a = await fake_ask_llm(q)

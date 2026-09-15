@@ -75,7 +75,7 @@ async def count_requests(request, call_next):
 # TODO 1c — add /ask_batched here
 @app.post("/ask_batched", response_model=Answer)
 async def ask_batched(q: Question) -> Answer:
-    pipeline_q = _PipelineQuestion(text=q.question)
+    pipeline_q = _PipelineQuestion(question=q.question)
     pipeline_ans = await _pipeline_ask_llm(pipeline_q)
     db_path = Path(__file__).resolve().parents[2] / "data" / "answers.db"
     with connect(db_path) as conn:

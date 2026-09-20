@@ -1,0 +1,71 @@
+strategy_name,snippet_ID,model_raw_response,parsed_response,company_actual,role_actual,years_experience_required_actual,id,company_gold,role_gold,years_experience_required_gold,notes,company_eval,role_eval,years_experience_required_eval,accuracy,parsed_response_eval,judge_score,judge_reason
+zero_shot_prompt,j01,"```json
+{
+  ""company"": ""Acme Corp"",
+  ""role"": ""Senior Software Engineer"",
+  ""years_experience_required"": ""5+""
+}
+```",null,Acme Corp,Senior Software Engineer,5+,j01,Acme Corp,Senior Software Engineer,5,clean — clear company + role + years,1,1,0,2,0,20,"The LLM was able to extract the correct information for the company and role but there is a slight discrepancy in the years of experience required. The actual response specifies '5+' years, whereas the golden response specifies '5' years. The extracted information is accurate aside from that minor inconsistency. Additionally, the response is returned in a parseable JSON format with minor formatting differences, such as the inclusion of code block markers. Overall, it addresses the extraction task effectively, but the difference in years of experience prevents a perfect score."
+zero_shot_prompt,j02,"```json
+{
+  ""company"": ""Northwind Ltd"",
+  ""role"": ""Data Analyst"",
+  ""years_experience_required"": 2
+}
+```",null,Northwind Ltd,Data Analyst,2,j02,Northwind Ltd,Data Analyst,2,clean — preferred used but still a stated minimum,1,1,1,3,0,20,"The LLM was able to extract the correct information for the company and role but there is a slight discrepancy in the years of experience required. The actual response specifies '5+' years, whereas the golden response specifies '5' years. The extracted information is accurate aside from that minor inconsistency. Additionally, the response is returned in a parseable JSON format with minor formatting differences, such as the inclusion of code block markers. Overall, it addresses the extraction task effectively, but the difference in years of experience prevents a perfect score."
+zero_shot_prompt,j03,"```json
+{
+  ""company"": ""Globex International"",
+  ""role"": ""Product Manager - Growth"",
+  ""years_experience_required"": 4
+}
+```",null,Globex International,Product Manager - Growth,4,j03,Globex International,Product Manager - Growth,4,clean — 'at least 4 years',1,1,1,3,0,20,"The LLM was able to extract the correct information for the company and role but there is a slight discrepancy in the years of experience required. The actual response specifies '5+' years, whereas the golden response specifies '5' years. The extracted information is accurate aside from that minor inconsistency. Additionally, the response is returned in a parseable JSON format with minor formatting differences, such as the inclusion of code block markers. Overall, it addresses the extraction task effectively, but the difference in years of experience prevents a perfect score."
+zero_shot_prompt,j04,"```json
+{
+  ""company"": ""Initech"",
+  ""role"": ""Lead DevOps Engineer"",
+  ""years_experience_required"": 6
+}
+```",null,Initech,Lead DevOps Engineer,6,j04,Initech,Lead DevOps Engineer,6,slightly fuzzy — 'around 6 years' — accept 6,1,1,1,3,0,20,"The LLM was able to extract the correct information for the company and role but there is a slight discrepancy in the years of experience required. The actual response specifies '5+' years, whereas the golden response specifies '5' years. The extracted information is accurate aside from that minor inconsistency. Additionally, the response is returned in a parseable JSON format with minor formatting differences, such as the inclusion of code block markers. Overall, it addresses the extraction task effectively, but the difference in years of experience prevents a perfect score."
+zero_shot_prompt,j05,"```json
+{
+  ""company"": ""Hooli"",
+  ""role"": ""Junior Frontend Developer"",
+  ""years_experience_required"": 0
+}
+```",null,Hooli,Junior Frontend Developer,0,j05,Hooli,Junior Frontend Developer,0,edge — fresh grads OK = 0 years,1,1,1,3,0,20,"The LLM was able to extract the correct information for the company and role but there is a slight discrepancy in the years of experience required. The actual response specifies '5+' years, whereas the golden response specifies '5' years. The extracted information is accurate aside from that minor inconsistency. Additionally, the response is returned in a parseable JSON format with minor formatting differences, such as the inclusion of code block markers. Overall, it addresses the extraction task effectively, but the difference in years of experience prevents a perfect score."
+zero_shot_prompt,j06,"```json
+{
+  ""company"": ""Pied Piper Inc."",
+  ""role"": ""Senior ML Engineer"",
+  ""years_experience_required"": ""7+ years""
+}
+```",null,Pied Piper Inc.,Senior ML Engineer,7+ years,j06,Pied Piper Inc.,Senior ML Engineer,7,fuzzy — '7+ years' typically taken as 7; exceptional candidates clause is colour text,1,1,0,2,0,20,"The LLM was able to extract the correct information for the company and role but there is a slight discrepancy in the years of experience required. The actual response specifies '5+' years, whereas the golden response specifies '5' years. The extracted information is accurate aside from that minor inconsistency. Additionally, the response is returned in a parseable JSON format with minor formatting differences, such as the inclusion of code block markers. Overall, it addresses the extraction task effectively, but the difference in years of experience prevents a perfect score."
+zero_shot_prompt,j07,"```json
+{
+  ""company"": ""Soylent Industries"",
+  ""role"": ""Engineering Manager"",
+  ""years_experience_required"": 3
+}
+```",null,Soylent Industries,Engineering Manager,3,j07,Soylent Industries,Engineering Manager,3,spelled-out number — 'about three years' → 3,1,1,1,3,0,20,"The LLM was able to extract the correct information for the company and role but there is a slight discrepancy in the years of experience required. The actual response specifies '5+' years, whereas the golden response specifies '5' years. The extracted information is accurate aside from that minor inconsistency. Additionally, the response is returned in a parseable JSON format with minor formatting differences, such as the inclusion of code block markers. Overall, it addresses the extraction task effectively, but the difference in years of experience prevents a perfect score."
+zero_shot_prompt,j08,"```json
+{
+  ""company"": ""Wonka Confectionery Ltd."",
+  ""role"": ""Senior UX Researcher"",
+  ""years_experience_required"": 5
+}
+```",null,Wonka Confectionery Ltd.,Senior UX Researcher,5,j08,Wonka Confectionery Ltd,Senior UX Researcher,5,clean — 'five years' → 5,0,1,1,2,0,20,"The LLM was able to extract the correct information for the company and role but there is a slight discrepancy in the years of experience required. The actual response specifies '5+' years, whereas the golden response specifies '5' years. The extracted information is accurate aside from that minor inconsistency. Additionally, the response is returned in a parseable JSON format with minor formatting differences, such as the inclusion of code block markers. Overall, it addresses the extraction task effectively, but the difference in years of experience prevents a perfect score."
+zero_shot_prompt,j09,"```json
+{
+  ""company"": ""Stark Industries"",
+  ""role"": ""Cybersecurity Analyst"",
+  ""years_experience_required"": ""3-5 years""
+}
+```",null,Stark Industries,Cybersecurity Analyst,3-5 years,j09,Stark Industries,Cybersecurity Analyst,3,"range 3-5 — take the minimum, 3. Accept 3 or 'between 3 and 5'.",1,1,0,2,0,20,"The LLM was able to extract the correct information for the company and role but there is a slight discrepancy in the years of experience required. The actual response specifies '5+' years, whereas the golden response specifies '5' years. The extracted information is accurate aside from that minor inconsistency. Additionally, the response is returned in a parseable JSON format with minor formatting differences, such as the inclusion of code block markers. Overall, it addresses the extraction task effectively, but the difference in years of experience prevents a perfect score."
+zero_shot_prompt,j10,"```json
+{
+  ""company"": ""Cyberdyne Systems"",
+  ""role"": ""AI/ML Research Scientist"",
+  ""years_experience_required"": ""not specified""
+}
+```",null,Cyberdyne Systems,AI/ML Research Scientist,not specified,j10,Cyberdyne Systems,AI/ML Research Scientist,,edge — no years stated. Correct answer: null. Penalise if model fabricates a number.,1,1,1,3,0,20,"The LLM was able to extract the correct information for the company and role but there is a slight discrepancy in the years of experience required. The actual response specifies '5+' years, whereas the golden response specifies '5' years. The extracted information is accurate aside from that minor inconsistency. Additionally, the response is returned in a parseable JSON format with minor formatting differences, such as the inclusion of code block markers. Overall, it addresses the extraction task effectively, but the difference in years of experience prevents a perfect score."

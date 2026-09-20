@@ -10,7 +10,6 @@ from pydantic import BaseModel, Field
 from pathlib import Path
 from prompts import PROMPTS
 import json
-from evaluation_store import save_result
 import re
 
 load_dotenv()

@@ -3,69 +3,69 @@ zero_shot_prompt,j01,"```json
 {
   ""company"": ""Acme Corp"",
   ""role"": ""Senior Software Engineer"",
-  ""years_experience_required"": 5
+  ""years_experience_required"": ""5+""
 }
-```",null,3.6599999999999995e-05,2.1165873749996535
+```",null,3.72e-05,2.4383777920156717
 zero_shot_prompt,j02,"```json
 {
   ""company"": ""Northwind Ltd"",
   ""role"": ""Data Analyst"",
   ""years_experience_required"": 2
 }
-```",null,3.6e-05,1.411842166002316
+```",null,3.6e-05,1.2648669999907725
 zero_shot_prompt,j03,"```json
 {
   ""company"": ""Globex International"",
   ""role"": ""Product Manager - Growth"",
   ""years_experience_required"": 4
 }
-```",null,3.795e-05,1.3346357920017908
+```",null,3.795e-05,1.3783255830057897
 zero_shot_prompt,j04,"```json
 {
   ""company"": ""Initech"",
   ""role"": ""Lead DevOps Engineer"",
   ""years_experience_required"": 6
 }
-```",null,3.75e-05,1.1410380419983994
+```",null,3.75e-05,1.1222093750257045
 zero_shot_prompt,j05,"```json
 {
-    ""company"": ""Hooli"",
-    ""role"": ""Junior Frontend Developer"",
-    ""years_experience_required"": 0
+  ""company"": ""Hooli"",
+  ""role"": ""Junior Frontend Developer"",
+  ""years_experience_required"": 0
 }
-```",null,3.705e-05,1.0832616249972489
+```",null,3.705e-05,1.291883624973707
 zero_shot_prompt,j06,"```json
 {
   ""company"": ""Pied Piper Inc."",
   ""role"": ""Senior ML Engineer"",
-  ""years_experience_required"": ""7+""
+  ""years_experience_required"": ""7+ years""
 }
-```",null,3.8849999999999996e-05,1.2726194999995641
+```",null,3.9450000000000003e-05,1.277554208994843
 zero_shot_prompt,j07,"```json
 {
   ""company"": ""Soylent Industries"",
   ""role"": ""Engineering Manager"",
   ""years_experience_required"": 3
 }
-```",null,3.66e-05,1.2282792500045616
+```",null,3.66e-05,1.3497905409894884
 zero_shot_prompt,j08,"```json
 {
   ""company"": ""Wonka Confectionery Ltd."",
   ""role"": ""Senior UX Researcher"",
   ""years_experience_required"": 5
 }
-```",null,3.8700000000000006e-05,1.0989130000016303
+```",null,3.8700000000000006e-05,1.2388483340037055
 zero_shot_prompt,j09,"```json
 {
   ""company"": ""Stark Industries"",
   ""role"": ""Cybersecurity Analyst"",
   ""years_experience_required"": ""3-5 years""
 }
-```",null,3.8849999999999996e-05,1.2123886670015054
+```",null,3.8849999999999996e-05,1.5187393340165727
 zero_shot_prompt,j10,"```json
 {
   ""company"": ""Cyberdyne Systems"",
   ""role"": ""AI/ML Research Scientist"",
-  ""years_experience_required"": ""Not specified""
+  ""years_experience_required"": ""not specified""
 }
-```",null,4.05e-05,1.0131877090025228
+```",null,4.05e-05,1.1669412920018658

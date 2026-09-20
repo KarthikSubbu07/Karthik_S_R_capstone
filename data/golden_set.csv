@@ -1,0 +1,11 @@
+id,company,role,years_experience_required,notes
+j01,Acme Corp,Senior Software Engineer,5,clean — clear company + role + years
+j02,Northwind Ltd,Data Analyst,2,clean — preferred used but still a stated minimum
+j03,Globex International,Product Manager - Growth,4,clean — 'at least 4 years'
+j04,Initech,Lead DevOps Engineer,6,slightly fuzzy — 'around 6 years' — accept 6
+j05,Hooli,Junior Frontend Developer,0,edge — fresh grads OK = 0 years
+j06,Pied Piper Inc.,Senior ML Engineer,7,fuzzy — '7+ years' typically taken as 7; exceptional candidates clause is colour text
+j07,Soylent Industries,Engineering Manager,3,spelled-out number — 'about three years' → 3
+j08,Wonka Confectionery Ltd,Senior UX Researcher,5,clean — 'five years' → 5
+j09,Stark Industries,Cybersecurity Analyst,3,"range 3-5 — take the minimum, 3. Accept 3 or 'between 3 and 5'."
+j10,Cyberdyne Systems,AI/ML Research Scientist,,edge — no years stated. Correct answer: null. Penalise if model fabricates a number.

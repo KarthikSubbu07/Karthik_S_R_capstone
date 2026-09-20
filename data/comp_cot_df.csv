@@ -1,0 +1,93 @@
+strategy_name,snippet_ID,model_raw_response,parsed_response,company_actual,role_actual,years_experience_required_actual,id,company_gold,role_gold,years_experience_required_gold,notes,company_eval,role_eval,years_experience_required_eval,accuracy,parsed_response_eval,judge_score,judge_reason
+cot_prompt,j01,"To extract the required information, let's analyze the job posting step by step:
+
+1. **Company Name**: The job posting begins with ""Acme Corp is hiring"", indicating that the company name is ""Acme Corp"".
+
+2. **Role**: The phrase ""Senior Software Engineer"" clearly states the job title being offered.
+
+3. **Years of Experience Required**: The posting mentions ""5+ years of backend development experience"". This indicates a minimum of 5 years of experience is required for the role.
+
+Now, consolidating this information into the specified JSON format:
+
+```json
+{
+  ""company"": ""Acme Corp"",
+  ""role"": ""Senior Software Engineer"",
+  ""years_experience_required"": 5,
+  ""reasoning"": ""The company name is derived from the opening of the job posting. The role is specified directly in the text, and the years of experience required is indicated by '5+' which means a minimum of 5 years.""
+}
+```",null,Acme Corp,Senior Software Engineer,5,j01,Acme Corp,Senior Software Engineer,5,clean — clear company + role + years,1,1,1,3,0,15,"The LLM was able to extract the required information: the company name, role, and years of experience from the job posting. However, the response includes additional reasoning text which is not needed for the task. Also, the ""years_experience_required"" should include quotation marks around the numeric value, as seen in the golden response. These factors detract from the overall accuracy of the response."
+cot_prompt,j02,"{
+  ""company"": ""Northwind Ltd."",
+  ""role"": ""Data Analyst"",
+  ""years_experience_required"": 2,
+  ""reasoning"": ""The job posting explicitly states that 2 years minimum experience is preferred for the role of Data Analyst at Northwind Ltd.""
+}","{""company"": ""Northwind Ltd."", ""role"": ""Data Analyst"", ""years_experience_required"": 2, ""reasoning"": ""The job posting explicitly states that 2 years minimum experience is preferred for the role of Data Analyst at Northwind Ltd.""}",Northwind Ltd.,Data Analyst,2,j02,Northwind Ltd,Data Analyst,2,clean — preferred used but still a stated minimum,0,1,1,2,1,15,"The LLM was able to extract the required information: the company name, role, and years of experience from the job posting. However, the response includes additional reasoning text which is not needed for the task. Also, the ""years_experience_required"" should include quotation marks around the numeric value, as seen in the golden response. These factors detract from the overall accuracy of the response."
+cot_prompt,j03,"To extract the required information from the job posting:
+
+1. Identify the company: The job posting starts with ""Globex International,"" which is the company name.
+2. Determine the role: The role is specified as ""Product Manager - Growth.""
+3. Find the years of experience required: The posting states ""at least 4 years of product management experience,"" indicating the minimum years of experience required are 4.
+
+Now, we can compile this information into the requested JSON format:
+
+```json
+{
+  ""company"": ""Globex International"",
+  ""role"": ""Product Manager - Growth"",
+  ""years_experience_required"": 4,
+  ""reasoning"": ""The company name is mentioned at the beginning of the posting. The role is clearly stated as 'Product Manager - Growth'. The requirement of 'at least 4 years of product management experience' indicates the minimum years of experience needed for the role.""
+}
+```",null,Globex International,Product Manager - Growth,4,j03,Globex International,Product Manager - Growth,4,clean — 'at least 4 years',1,1,1,3,0,15,"The LLM was able to extract the required information: the company name, role, and years of experience from the job posting. However, the response includes additional reasoning text which is not needed for the task. Also, the ""years_experience_required"" should include quotation marks around the numeric value, as seen in the golden response. These factors detract from the overall accuracy of the response."
+cot_prompt,j04,"```json
+{
+  ""company"": ""Initech"",
+  ""role"": ""Lead DevOps Engineer"",
+  ""years_experience_required"": 6,
+  ""reasoning"": ""The job posting explicitly mentions that around 6 years of hands-on infrastructure work is expected, which directly indicates the required years of experience for the role.""
+}
+```",null,Initech,Lead DevOps Engineer,6,j04,Initech,Lead DevOps Engineer,6,slightly fuzzy — 'around 6 years' — accept 6,1,1,1,3,0,15,"The LLM was able to extract the required information: the company name, role, and years of experience from the job posting. However, the response includes additional reasoning text which is not needed for the task. Also, the ""years_experience_required"" should include quotation marks around the numeric value, as seen in the golden response. These factors detract from the overall accuracy of the response."
+cot_prompt,j05,"```json
+{
+  ""company"": ""Hooli"",
+  ""role"": ""Junior Frontend Developer"",
+  ""years_experience_required"": 0,
+  ""reasoning"": ""The job posting explicitly states that fresh grads are welcome and that no prior experience is required, indicating that the minimum years of experience needed for this role is 0.""
+}
+```",null,Hooli,Junior Frontend Developer,0,j05,Hooli,Junior Frontend Developer,0,edge — fresh grads OK = 0 years,1,1,1,3,0,15,"The LLM was able to extract the required information: the company name, role, and years of experience from the job posting. However, the response includes additional reasoning text which is not needed for the task. Also, the ""years_experience_required"" should include quotation marks around the numeric value, as seen in the golden response. These factors detract from the overall accuracy of the response."
+cot_prompt,j06,"{
+  ""company"": ""Pied Piper Inc."",
+  ""role"": ""Senior ML Engineer"",
+  ""years_experience_required"": 7,
+  ""reasoning"": ""The job posting mentions 'typically look for 7+ years in production ML and distributed systems', which indicates a requirement of at least 7 years of experience, hence I extracted 7 as the minimum years of experience. The note about 'exceptional candidates with less are welcome' suggests flexibility, but the base requirement stands at 7 years.""
+}","{""company"": ""Pied Piper Inc."", ""role"": ""Senior ML Engineer"", ""years_experience_required"": 7, ""reasoning"": ""The job posting mentions 'typically look for 7+ years in production ML and distributed systems', which indicates a requirement of at least 7 years of experience, hence I extracted 7 as the minimum years of experience. The note about 'exceptional candidates with less are welcome' suggests flexibility, but the base requirement stands at 7 years.""}",Pied Piper Inc.,Senior ML Engineer,7,j06,Pied Piper Inc.,Senior ML Engineer,7,fuzzy — '7+ years' typically taken as 7; exceptional candidates clause is colour text,1,1,1,3,1,15,"The LLM was able to extract the required information: the company name, role, and years of experience from the job posting. However, the response includes additional reasoning text which is not needed for the task. Also, the ""years_experience_required"" should include quotation marks around the numeric value, as seen in the golden response. These factors detract from the overall accuracy of the response."
+cot_prompt,j07,"```json
+{
+  ""company"": ""Soylent Industries"",
+  ""role"": ""Engineering Manager"",
+  ""years_experience_required"": 3,
+  ""reasoning"": ""The job posting specifies 'about three years leading engineering teams', which translates to a required minimum of three years of experience in a leadership role. There is also a reference to a 'solid IC background', indicating that prior individual contributor experience is desirable but not quantified in years.""
+}
+```",null,Soylent Industries,Engineering Manager,3,j07,Soylent Industries,Engineering Manager,3,spelled-out number — 'about three years' → 3,1,1,1,3,0,15,"The LLM was able to extract the required information: the company name, role, and years of experience from the job posting. However, the response includes additional reasoning text which is not needed for the task. Also, the ""years_experience_required"" should include quotation marks around the numeric value, as seen in the golden response. These factors detract from the overall accuracy of the response."
+cot_prompt,j08,"{
+  ""company"": ""Wonka Confectionery Ltd."",
+  ""role"": ""Senior UX Researcher"",
+  ""years_experience_required"": 5,
+  ""reasoning"": ""The job posting states 'Five years of UX research experience or equivalent portfolio required,' indicating that the minimum requirement for years of experience in UX research is 5.""
+}","{""company"": ""Wonka Confectionery Ltd."", ""role"": ""Senior UX Researcher"", ""years_experience_required"": 5, ""reasoning"": ""The job posting states 'Five years of UX research experience or equivalent portfolio required,' indicating that the minimum requirement for years of experience in UX research is 5.""}",Wonka Confectionery Ltd.,Senior UX Researcher,5,j08,Wonka Confectionery Ltd,Senior UX Researcher,5,clean — 'five years' → 5,0,1,1,2,1,15,"The LLM was able to extract the required information: the company name, role, and years of experience from the job posting. However, the response includes additional reasoning text which is not needed for the task. Also, the ""years_experience_required"" should include quotation marks around the numeric value, as seen in the golden response. These factors detract from the overall accuracy of the response."
+cot_prompt,j09,"```json
+{
+  ""company"": ""Stark Industries"",
+  ""role"": ""Cybersecurity Analyst"",
+  ""years_experience_required"": 3,
+  ""reasoning"": ""The job posting specifies 'Three to five years in a SOC environment,' indicating a minimum of three years of experience is required.""
+}
+```",null,Stark Industries,Cybersecurity Analyst,3,j09,Stark Industries,Cybersecurity Analyst,3,"range 3-5 — take the minimum, 3. Accept 3 or 'between 3 and 5'.",1,1,1,3,0,15,"The LLM was able to extract the required information: the company name, role, and years of experience from the job posting. However, the response includes additional reasoning text which is not needed for the task. Also, the ""years_experience_required"" should include quotation marks around the numeric value, as seen in the golden response. These factors detract from the overall accuracy of the response."
+cot_prompt,j10,"```json
+{
+  ""company"": ""Cyberdyne Systems"",
+  ""role"": ""AI/ML Research Scientist"",
+  ""years_experience_required"": 0,
+  ""reasoning"": ""The job posting indicates that a PhD is preferred, and while a strong publication record is desired, there is no specific years of experience mentioned. Instead, the focus is on demonstrated impact, which suggests that experience could vary widely and is not quantifiable in years. Thus, the minimum years of experience is set to 0.""
+}
+```",null,Cyberdyne Systems,AI/ML Research Scientist,0,j10,Cyberdyne Systems,AI/ML Research Scientist,,edge — no years stated. Correct answer: null. Penalise if model fabricates a number.,1,1,0,2,0,15,"The LLM was able to extract the required information: the company name, role, and years of experience from the job posting. However, the response includes additional reasoning text which is not needed for the task. Also, the ""years_experience_required"" should include quotation marks around the numeric value, as seen in the golden response. These factors detract from the overall accuracy of the response."

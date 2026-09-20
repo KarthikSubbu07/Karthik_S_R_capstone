@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import AsyncMock, patch
-from src.pipeline.fake_llm import Question, Answer, FakeLLMError
-from src.pipeline.settings import Settings
+from old.src.pipeline.fake_llm import Question, Answer, FakeLLMError
+from old.src.pipeline.settings import Settings
 
 async def test_ask_llm_calls_fake_once():
     """testing ask_llm calls the fake LLM once."""
@@ -15,7 +15,7 @@ async def test_ask_llm_calls_fake_once():
         "src.pipeline.pipeline.fake_ask_llm", 
         AsyncMock(return_value=fake_answer),
     ) as m:
-        from src.pipeline.pipeline import ask_llm
+        from old.src.pipeline.pipeline import ask_llm
         result = await ask_llm(
             Question(question="what is RAG"),
             Settings(use_fake=True),
@@ -34,7 +34,7 @@ async def test_retry_three_times_on_failure():
         "src.pipeline.pipeline.asyncio.sleep",
         AsyncMock()
     ):
-        from src.pipeline.pipeline import ask_llm_with_retry
+        from old.src.pipeline.pipeline import ask_llm_with_retry
         with pytest.raises(FakeLLMError):
             await ask_llm_with_retry(
                 Question(question="What is RAG?"),

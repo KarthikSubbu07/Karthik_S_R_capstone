@@ -30,9 +30,9 @@ from pathlib import Path
 # not the project root, so `from src.pipeline...` raises ModuleNotFoundError.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from src.pipeline.pipeline import Question, ask_llm
-from src.pipeline.settings import Settings
-from src.pipeline.store import connect, save_answer
+from old.src.pipeline.pipeline import Question, ask_llm
+from old.src.pipeline.settings import Settings
+from old.src.pipeline.store import connect, save_answer
 
 
 async def run_one_model(questions: list[str], model: str, db_path: Path) -> dict:

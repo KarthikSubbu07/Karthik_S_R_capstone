@@ -1,0 +1,223 @@
+strategy_name,snippet_ID,model_raw_response,parsed_response,cost_in_USD,latency_in_seconds
+zero_shot_prompt,j01,"```json
+{
+  ""company"": ""Acme Corp"",
+  ""role"": ""Senior Software Engineer"",
+  ""years_experience_required"": ""5+""
+}
+```",null,3.72e-05,2.4383777920156717
+few_shot_prompt,j01,"{""company"": ""Acme Corp"", ""role"": ""Senior Software Engineer"", ""years_experience_required"": 5}","{""company"": ""Acme Corp"", ""role"": ""Senior Software Engineer"", ""years_experience_required"": 5}",4.65e-05,2.1015267920447513
+structured_prompt,j01,"{
+  ""company"": ""Acme Corp"",
+  ""role"": ""Senior Software Engineer"",
+  ""years_experience_required"": 5
+}","{""company"": ""Acme Corp"", ""role"": ""Senior Software Engineer"", ""years_experience_required"": 5}",6.51e-05,2.276655290974304
+cot_prompt,j01,"To extract the required information, let's analyze the job posting step by step:
+
+1. **Company Name**: The job posting begins with ""Acme Corp is hiring"", indicating that the company name is ""Acme Corp"".
+
+2. **Role**: The phrase ""Senior Software Engineer"" clearly states the job title being offered.
+
+3. **Years of Experience Required**: The posting mentions ""5+ years of backend development experience"". This indicates a minimum of 5 years of experience is required for the role.
+
+Now, consolidating this information into the specified JSON format:
+
+```json
+{
+  ""company"": ""Acme Corp"",
+  ""role"": ""Senior Software Engineer"",
+  ""years_experience_required"": 5,
+  ""reasoning"": ""The company name is derived from the opening of the job posting. The role is specified directly in the text, and the years of experience required is indicated by '5+' which means a minimum of 5 years.""
+}
+```",null,0.00014309999999999998,3.1183258339879103
+zero_shot_prompt,j02,"```json
+{
+  ""company"": ""Northwind Ltd"",
+  ""role"": ""Data Analyst"",
+  ""years_experience_required"": 2
+}
+```",null,3.6e-05,1.2648669999907725
+few_shot_prompt,j02,"{""company"": ""Northwind Ltd"", ""role"": ""Data Analyst"", ""years_experience_required"": 2}","{""company"": ""Northwind Ltd"", ""role"": ""Data Analyst"", ""years_experience_required"": 2}",4.59e-05,1.1583365839906037
+structured_prompt,j02,"{
+  ""company"": ""Northwind Ltd."",
+  ""role"": ""Data Analyst"",
+  ""years_experience_required"": 2
+}","{""company"": ""Northwind Ltd."", ""role"": ""Data Analyst"", ""years_experience_required"": 2}",6.45e-05,1.2073313749860972
+cot_prompt,j02,"{
+  ""company"": ""Northwind Ltd."",
+  ""role"": ""Data Analyst"",
+  ""years_experience_required"": 2,
+  ""reasoning"": ""The job posting explicitly states that 2 years minimum experience is preferred for the role of Data Analyst at Northwind Ltd.""
+}","{""company"": ""Northwind Ltd."", ""role"": ""Data Analyst"", ""years_experience_required"": 2, ""reasoning"": ""The job posting explicitly states that 2 years minimum experience is preferred for the role of Data Analyst at Northwind Ltd.""}",5.97e-05,1.5273863750044256
+zero_shot_prompt,j03,"```json
+{
+  ""company"": ""Globex International"",
+  ""role"": ""Product Manager - Growth"",
+  ""years_experience_required"": 4
+}
+```",null,3.795e-05,1.3783255830057897
+few_shot_prompt,j03,"{""company"": ""Globex International"", ""role"": ""Product Manager - Growth"", ""years_experience_required"": 4}","{""company"": ""Globex International"", ""role"": ""Product Manager - Growth"", ""years_experience_required"": 4}",4.7850000000000004e-05,1.0214439170085825
+structured_prompt,j03,"{
+  ""company"": ""Globex International"",
+  ""role"": ""Product Manager - Growth"",
+  ""years_experience_required"": 4
+}","{""company"": ""Globex International"", ""role"": ""Product Manager - Growth"", ""years_experience_required"": 4}",6.645e-05,1.1759297500248067
+cot_prompt,j03,"To extract the required information from the job posting:
+
+1. Identify the company: The job posting starts with ""Globex International,"" which is the company name.
+2. Determine the role: The role is specified as ""Product Manager - Growth.""
+3. Find the years of experience required: The posting states ""at least 4 years of product management experience,"" indicating the minimum years of experience required are 4.
+
+Now, we can compile this information into the requested JSON format:
+
+```json
+{
+  ""company"": ""Globex International"",
+  ""role"": ""Product Manager - Growth"",
+  ""years_experience_required"": 4,
+  ""reasoning"": ""The company name is mentioned at the beginning of the posting. The role is clearly stated as 'Product Manager - Growth'. The requirement of 'at least 4 years of product management experience' indicates the minimum years of experience needed for the role.""
+}
+```",null,0.00013665000000000001,1.9727999590104446
+zero_shot_prompt,j04,"```json
+{
+  ""company"": ""Initech"",
+  ""role"": ""Lead DevOps Engineer"",
+  ""years_experience_required"": 6
+}
+```",null,3.75e-05,1.1222093750257045
+few_shot_prompt,j04,"{""company"": ""Initech"", ""role"": ""Lead DevOps Engineer"", ""years_experience_required"": 6}","{""company"": ""Initech"", ""role"": ""Lead DevOps Engineer"", ""years_experience_required"": 6}",4.74e-05,0.9771159999654628
+structured_prompt,j04,"{
+  ""company"": ""Initech"",
+  ""role"": ""Lead DevOps Engineer"",
+  ""years_experience_required"": 6
+}","{""company"": ""Initech"", ""role"": ""Lead DevOps Engineer"", ""years_experience_required"": 6}",6.6e-05,1.1848625410348177
+cot_prompt,j04,"```json
+{
+  ""company"": ""Initech"",
+  ""role"": ""Lead DevOps Engineer"",
+  ""years_experience_required"": 6,
+  ""reasoning"": ""The job posting explicitly mentions that around 6 years of hands-on infrastructure work is expected, which directly indicates the required years of experience for the role.""
+}
+```",null,6.720000000000001e-05,1.2391923749819398
+zero_shot_prompt,j05,"```json
+{
+  ""company"": ""Hooli"",
+  ""role"": ""Junior Frontend Developer"",
+  ""years_experience_required"": 0
+}
+```",null,3.705e-05,1.291883624973707
+few_shot_prompt,j05,"{""company"": ""Hooli"", ""role"": ""Junior Frontend Developer"", ""years_experience_required"": 0}","{""company"": ""Hooli"", ""role"": ""Junior Frontend Developer"", ""years_experience_required"": 0}",4.695e-05,1.11197191698011
+structured_prompt,j05,"{
+  ""company"": ""Hooli"",
+  ""role"": ""Junior Frontend Developer"",
+  ""years_experience_required"": 0
+}","{""company"": ""Hooli"", ""role"": ""Junior Frontend Developer"", ""years_experience_required"": 0}",6.555e-05,1.1970624579698779
+cot_prompt,j05,"```json
+{
+  ""company"": ""Hooli"",
+  ""role"": ""Junior Frontend Developer"",
+  ""years_experience_required"": 0,
+  ""reasoning"": ""The job posting explicitly states that fresh grads are welcome and that no prior experience is required, indicating that the minimum years of experience needed for this role is 0.""
+}
+```",null,6.855e-05,1.3261675829999149
+zero_shot_prompt,j06,"```json
+{
+  ""company"": ""Pied Piper Inc."",
+  ""role"": ""Senior ML Engineer"",
+  ""years_experience_required"": ""7+ years""
+}
+```",null,3.9450000000000003e-05,1.277554208994843
+few_shot_prompt,j06,"{""company"": ""Pied Piper Inc."", ""role"": ""Senior ML Engineer"", ""years_experience_required"": 7}","{""company"": ""Pied Piper Inc."", ""role"": ""Senior ML Engineer"", ""years_experience_required"": 7}",4.815e-05,1.014670374977868
+structured_prompt,j06,"{
+  ""company"": ""Pied Piper Inc."",
+  ""role"": ""Senior ML Engineer"",
+  ""years_experience_required"": 7
+}","{""company"": ""Pied Piper Inc."", ""role"": ""Senior ML Engineer"", ""years_experience_required"": 7}",6.675e-05,1.2540277920197695
+cot_prompt,j06,"{
+  ""company"": ""Pied Piper Inc."",
+  ""role"": ""Senior ML Engineer"",
+  ""years_experience_required"": 7,
+  ""reasoning"": ""The job posting mentions 'typically look for 7+ years in production ML and distributed systems', which indicates a requirement of at least 7 years of experience, hence I extracted 7 as the minimum years of experience. The note about 'exceptional candidates with less are welcome' suggests flexibility, but the base requirement stands at 7 years.""
+}","{""company"": ""Pied Piper Inc."", ""role"": ""Senior ML Engineer"", ""years_experience_required"": 7, ""reasoning"": ""The job posting mentions 'typically look for 7+ years in production ML and distributed systems', which indicates a requirement of at least 7 years of experience, hence I extracted 7 as the minimum years of experience. The note about 'exceptional candidates with less are welcome' suggests flexibility, but the base requirement stands at 7 years.""}",8.895e-05,1.5485205419827253
+zero_shot_prompt,j07,"```json
+{
+  ""company"": ""Soylent Industries"",
+  ""role"": ""Engineering Manager"",
+  ""years_experience_required"": 3
+}
+```",null,3.66e-05,1.3497905409894884
+few_shot_prompt,j07,"{""company"": ""Soylent Industries"", ""role"": ""Engineering Manager"", ""years_experience_required"": 3}","{""company"": ""Soylent Industries"", ""role"": ""Engineering Manager"", ""years_experience_required"": 3}",4.65e-05,1.068575499986764
+structured_prompt,j07,"{
+  ""company"": ""Soylent Industries"",
+  ""role"": ""Engineering Manager"",
+  ""years_experience_required"": 3
+}","{""company"": ""Soylent Industries"", ""role"": ""Engineering Manager"", ""years_experience_required"": 3}",6.51e-05,1.2767872919794172
+cot_prompt,j07,"```json
+{
+  ""company"": ""Soylent Industries"",
+  ""role"": ""Engineering Manager"",
+  ""years_experience_required"": 3,
+  ""reasoning"": ""The job posting specifies 'about three years leading engineering teams', which translates to a required minimum of three years of experience in a leadership role. There is also a reference to a 'solid IC background', indicating that prior individual contributor experience is desirable but not quantified in years.""
+}
+```",null,8.069999999999998e-05,1.4191293750191107
+zero_shot_prompt,j08,"```json
+{
+  ""company"": ""Wonka Confectionery Ltd."",
+  ""role"": ""Senior UX Researcher"",
+  ""years_experience_required"": 5
+}
+```",null,3.8700000000000006e-05,1.2388483340037055
+few_shot_prompt,j08,"{""company"": ""Wonka Confectionery Ltd."", ""role"": ""Senior UX Researcher"", ""years_experience_required"": 5}","{""company"": ""Wonka Confectionery Ltd."", ""role"": ""Senior UX Researcher"", ""years_experience_required"": 5}",4.8599999999999995e-05,1.092528291977942
+structured_prompt,j08,"{
+  ""company"": ""Wonka Confectionery Ltd."",
+  ""role"": ""Senior UX Researcher"",
+  ""years_experience_required"": 5
+}","{""company"": ""Wonka Confectionery Ltd."", ""role"": ""Senior UX Researcher"", ""years_experience_required"": 5}",6.72e-05,1.270724166999571
+cot_prompt,j08,"{
+  ""company"": ""Wonka Confectionery Ltd."",
+  ""role"": ""Senior UX Researcher"",
+  ""years_experience_required"": 5,
+  ""reasoning"": ""The job posting states 'Five years of UX research experience or equivalent portfolio required,' indicating that the minimum requirement for years of experience in UX research is 5.""
+}","{""company"": ""Wonka Confectionery Ltd."", ""role"": ""Senior UX Researcher"", ""years_experience_required"": 5, ""reasoning"": ""The job posting states 'Five years of UX research experience or equivalent portfolio required,' indicating that the minimum requirement for years of experience in UX research is 5.""}",6.72e-05,1.2982335839769803
+zero_shot_prompt,j09,"```json
+{
+  ""company"": ""Stark Industries"",
+  ""role"": ""Cybersecurity Analyst"",
+  ""years_experience_required"": ""3-5 years""
+}
+```",null,3.8849999999999996e-05,1.5187393340165727
+few_shot_prompt,j09,"{""company"": ""Stark Industries"", ""role"": ""Cybersecurity Analyst"", ""years_experience_required"": 3}","{""company"": ""Stark Industries"", ""role"": ""Cybersecurity Analyst"", ""years_experience_required"": 3}",4.695e-05,1.1952819579746574
+structured_prompt,j09,"{
+  ""company"": ""Stark Industries"",
+  ""role"": ""Cybersecurity Analyst"",
+  ""years_experience_required"": 3
+}","{""company"": ""Stark Industries"", ""role"": ""Cybersecurity Analyst"", ""years_experience_required"": 3}",6.555e-05,2.2795436669839546
+cot_prompt,j09,"```json
+{
+  ""company"": ""Stark Industries"",
+  ""role"": ""Cybersecurity Analyst"",
+  ""years_experience_required"": 3,
+  ""reasoning"": ""The job posting specifies 'Three to five years in a SOC environment,' indicating a minimum of three years of experience is required.""
+}
+```",null,6.375e-05,1.50094545801403
+zero_shot_prompt,j10,"```json
+{
+  ""company"": ""Cyberdyne Systems"",
+  ""role"": ""AI/ML Research Scientist"",
+  ""years_experience_required"": ""not specified""
+}
+```",null,4.05e-05,1.1669412920018658
+few_shot_prompt,j10,"{""company"": ""Cyberdyne Systems"", ""role"": ""AI/ML Research Scientist"", ""years_experience_required"": ""null""}","{""company"": ""Cyberdyne Systems"", ""role"": ""AI/ML Research Scientist"", ""years_experience_required"": ""null""}",4.98e-05,1.2781535829999484
+structured_prompt,j10,"{
+  ""company"": ""Cyberdyne Systems"",
+  ""role"": ""AI/ML Research Scientist"",
+  ""years_experience_required"": null
+}","{""company"": ""Cyberdyne Systems"", ""role"": ""AI/ML Research Scientist"", ""years_experience_required"": null}",6.78e-05,1.133258041983936
+cot_prompt,j10,"```json
+{
+  ""company"": ""Cyberdyne Systems"",
+  ""role"": ""AI/ML Research Scientist"",
+  ""years_experience_required"": 0,
+  ""reasoning"": ""The job posting indicates that a PhD is preferred, and while a strong publication record is desired, there is no specific years of experience mentioned. Instead, the focus is on demonstrated impact, which suggests that experience could vary widely and is not quantifiable in years. Thus, the minimum years of experience is set to 0.""
+}
+```",null,9.12e-05,1.7501621250412427

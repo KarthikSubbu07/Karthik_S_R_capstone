@@ -56,9 +56,9 @@
 
 
 import asyncio
-from pipeline import ask_llm
-from models import Question
-from settings import Settings
+from old.src.pipeline import ask_llm
+from old.src.pipeline.models import Question
+from old.src.pipeline.settings import Settings
 for m in ['gpt-4o-mini', 'gpt-4o']:
   settings = Settings(use_fake=True, model=m, openai_api_key='sk-not-used')
   ans = asyncio.run(ask_llm(Question(question='x')))

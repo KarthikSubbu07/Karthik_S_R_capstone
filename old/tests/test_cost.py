@@ -4,7 +4,7 @@ Pure unit tests. No API key required, no network. Should pass in under 50 ms.
 """
 import pytest
 
-from src.pipeline.cost import RATES, compute_cost_usd
+from old.src.pipeline.cost import RATES, compute_cost_usd
 
 
 class TestComputeCostUsd:

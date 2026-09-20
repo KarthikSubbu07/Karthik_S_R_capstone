@@ -35,9 +35,9 @@ try:
     from .cost import compute_cost_usd
     # from .models import Question
 except ImportError:    
-    from logging_config import get_logger
-    from settings import Settings, RunSummary
-    from cost import compute_cost_usd
+    from old.src.pipeline.logging_config import get_logger
+    from old.src.pipeline.settings import Settings, RunSummary
+    from old.src.pipeline.cost import compute_cost_usd
     # from models import Question
     
 log = get_logger("pipeline")
@@ -47,7 +47,7 @@ _settings_for_import = Settings()
 try:
     from .fake_llm import fake_ask_llm, FakeLLMError
 except ImportError:
-    from fake_llm import fake_ask_llm, FakeLLMError
+    from old.src.pipeline.fake_llm import fake_ask_llm, FakeLLMError
 
 if not _settings_for_import.use_fake:
     from dotenv import load_dotenv
@@ -314,7 +314,7 @@ if __name__ == "__main__":
         )
     
     print(f"wrote {len(answers)} answers to {settings.results_json} in {elapsed:.2f}s")
-    from store import connect, write_run, write_answers
+    from old.src.pipeline.store import connect, write_run, write_answers
     with connect(settings.results_db) as con:
         run_id = write_run(con, summary)
         n = write_answers(con, run_id, answers)

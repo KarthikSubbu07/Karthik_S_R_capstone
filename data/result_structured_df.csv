@@ -1,0 +1,51 @@
+strategy_name,snippet_ID,model_raw_response,parsed_response,cost_in_USD,latency_in_seconds
+structured_prompt,j01,"{
+  ""company"": ""Acme Corp"",
+  ""role"": ""Senior Software Engineer"",
+  ""years_experience_required"": 5
+}","{""company"": ""Acme Corp"", ""role"": ""Senior Software Engineer"", ""years_experience_required"": 5}",6.51e-05,2.276655290974304
+structured_prompt,j02,"{
+  ""company"": ""Northwind Ltd."",
+  ""role"": ""Data Analyst"",
+  ""years_experience_required"": 2
+}","{""company"": ""Northwind Ltd."", ""role"": ""Data Analyst"", ""years_experience_required"": 2}",6.45e-05,1.2073313749860972
+structured_prompt,j03,"{
+  ""company"": ""Globex International"",
+  ""role"": ""Product Manager - Growth"",
+  ""years_experience_required"": 4
+}","{""company"": ""Globex International"", ""role"": ""Product Manager - Growth"", ""years_experience_required"": 4}",6.645e-05,1.1759297500248067
+structured_prompt,j04,"{
+  ""company"": ""Initech"",
+  ""role"": ""Lead DevOps Engineer"",
+  ""years_experience_required"": 6
+}","{""company"": ""Initech"", ""role"": ""Lead DevOps Engineer"", ""years_experience_required"": 6}",6.6e-05,1.1848625410348177
+structured_prompt,j05,"{
+  ""company"": ""Hooli"",
+  ""role"": ""Junior Frontend Developer"",
+  ""years_experience_required"": 0
+}","{""company"": ""Hooli"", ""role"": ""Junior Frontend Developer"", ""years_experience_required"": 0}",6.555e-05,1.1970624579698779
+structured_prompt,j06,"{
+  ""company"": ""Pied Piper Inc."",
+  ""role"": ""Senior ML Engineer"",
+  ""years_experience_required"": 7
+}","{""company"": ""Pied Piper Inc."", ""role"": ""Senior ML Engineer"", ""years_experience_required"": 7}",6.675e-05,1.2540277920197695
+structured_prompt,j07,"{
+  ""company"": ""Soylent Industries"",
+  ""role"": ""Engineering Manager"",
+  ""years_experience_required"": 3
+}","{""company"": ""Soylent Industries"", ""role"": ""Engineering Manager"", ""years_experience_required"": 3}",6.51e-05,1.2767872919794172
+structured_prompt,j08,"{
+  ""company"": ""Wonka Confectionery Ltd."",
+  ""role"": ""Senior UX Researcher"",
+  ""years_experience_required"": 5
+}","{""company"": ""Wonka Confectionery Ltd."", ""role"": ""Senior UX Researcher"", ""years_experience_required"": 5}",6.72e-05,1.270724166999571
+structured_prompt,j09,"{
+  ""company"": ""Stark Industries"",
+  ""role"": ""Cybersecurity Analyst"",
+  ""years_experience_required"": 3
+}","{""company"": ""Stark Industries"", ""role"": ""Cybersecurity Analyst"", ""years_experience_required"": 3}",6.555e-05,2.2795436669839546
+structured_prompt,j10,"{
+  ""company"": ""Cyberdyne Systems"",
+  ""role"": ""AI/ML Research Scientist"",
+  ""years_experience_required"": null
+}","{""company"": ""Cyberdyne Systems"", ""role"": ""AI/ML Research Scientist"", ""years_experience_required"": null}",6.78e-05,1.133258041983936

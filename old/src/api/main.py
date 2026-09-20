@@ -24,10 +24,10 @@ from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
 # W2 pipeline — the underlying engine
-from src.pipeline.pipeline import ask_llm as _pipeline_ask_llm, stream_answer
-from src.pipeline.pipeline import Question as _PipelineQuestion
-from src.pipeline.pipeline import _settings_for_import
-from src.pipeline.store import connect, save_answer
+from old.src.pipeline.pipeline import ask_llm as _pipeline_ask_llm, stream_answer
+from old.src.pipeline.pipeline import Question as _PipelineQuestion
+from old.src.pipeline.pipeline import _settings_for_import
+from old.src.pipeline.store import connect, save_answer
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s  %(levelname)s  %(message)s")
 log = logging.getLogger(__name__)

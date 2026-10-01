@@ -1,0 +1,17 @@
+TEST_QUESTIONS = [
+    {"q": "How is espresso made?",
+     "ideal_source": "coffee_espresso",
+     "difficulty": "easy"},
+    {"q": "What temperature should green tea be brewed at?",
+     "ideal_source": "tea_green",
+     "difficulty": "easy"},
+    {"q": "What is the caffeine content of Robusta beans?",
+     "ideal_source": "coffee_beans",
+     "difficulty": "medium"},
+    {"q": "When did Europeans first drink hot chocolate?",
+     "ideal_source": "chocolate_history",
+     "difficulty": "medium"},
+    {"q": "What's the ratio of espresso to milk in a latte versus a cappuccino?",
+     "ideal_source": "milk_latte",
+     "difficulty": "hard"},
+]

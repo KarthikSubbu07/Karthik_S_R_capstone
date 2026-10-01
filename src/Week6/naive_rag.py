@@ -4,6 +4,7 @@ import numpy as np
 from openai import OpenAI
 from dotenv import load_dotenv, main
 from corpus import documents
+from test_questions import TEST_QUESTIONS
 
 load_dotenv()
 assert "OPENAI_API_KEY" in os.environ, "Please set the OPENAI_API_KEY environment variable."
@@ -35,9 +36,22 @@ def chunk_by_paragraph(text):
     """One chunk per paragraph."""
     return [p.strip() for p in text.split("\n\n") if p.strip()]
 
-def embed_batch(texts):
+def chunk_documents(documents: list[dict], size: int = 200,
+                    overlap: int = 40) -> list[dict]:
+    """Chunk every document. Returns flat list with source pointers."""
+    all_chunks = []
+    for doc in documents:
+        for chunk_idx, chunk in enumerate(chunk_text(doc["text"], size, overlap)):
+            all_chunks.append({
+                "chunk_id":  f"{doc['id']}#{chunk_idx}",
+                "source_id": doc["id"],
+                "text":      chunk,
+            })
+    return all_chunks
+
+def embed_batch(texts, model=EMBED_MODEL): 
         """One API call, list of 1536-dim vectors back."""
-        resp = client.embeddings.create(model=EMBED_MODEL, input=texts)
+        resp = client.embeddings.create(model=model, input=texts)
         return [item.embedding for item in resp.data]
 
 def cosine(a, b):
@@ -92,25 +106,39 @@ def ask_rag(question, chunks, k=3, system=SYSTEM):
         "tokens_out": resp.usage.completion_tokens,
     }
 
+def build_index(chunks, embed_model=EMBED_MODEL) -> list[dict]:
+    chunk_texts = [c["text"] for c in chunks]        
+    vectors = embed_batch(chunk_texts, embed_model)
+    for chunk, vec in zip(chunks, vectors):
+            chunk["vector"] = vec            
+    return chunks
 
-
-if __name__ == "__main__":                    
+def compare_chunk_sizes(question, ideal_source):
+    """Retrieve top-3 from each index. Print sources."""
+    print(f"\nQ: {question}")
+    print(f"   ideal_source: {ideal_source}\n")
+    for label, idx in [("100", index_100), ("200", index_200), ("400", index_400)]:
+        hits = retrieve(question, idx, k=3)
+        source_ids = [h["source_id"] for h in hits]
+        hit_ideal = "✓" if ideal_source in source_ids else "✗"
+        print(f"  size={label}: {hit_ideal} sources={source_ids}")
         
-        all_chunks = []
-        for doc in documents:
-                for chunk_idx, chunk in enumerate(chunk_text(doc["text"])):
-                        all_chunks.append({
-                        "chunk_id":  f"{doc['id']}#{chunk_idx}",
-                        "source_id": doc["id"],
-                        "text":      chunk,
-                        })
-                
-        chunk_texts = [c["text"] for c in all_chunks]        
-        vectors = embed_batch(chunk_texts)
+# Pricing constants (from W4 multi-model week)
+PRICE_INPUT_PER_1M  = {"gpt-4o-mini": 0.15}
+PRICE_OUTPUT_PER_1M = {"gpt-4o-mini": 0.60}
+PRICE_EMBED_PER_1M  = {"text-embedding-3-small": 0.02,
+                       "text-embedding-3-large": 0.13}
 
-        for chunk, vec in zip(all_chunks, vectors):
-                chunk["vector"] = vec
 
+def cost_usd(result: dict, chat_model: str = CHAT_MODEL) -> float:
+    """Compute cost of a single ask_rag call from token counts."""
+    return (
+        result["tokens_in"]  * PRICE_INPUT_PER_1M[chat_model]  / 1_000_000 +
+        result["tokens_out"] * PRICE_OUTPUT_PER_1M[chat_model] / 1_000_000
+    )
+
+
+if __name__ == "__main__":                                        
         # print(f"Embedded {len(vectors)} chunks.")
         # print(f"Each embedding shape: {len(vectors[0])} dimensions")
         # print(f"\nFirst 8 dims of chunk 0 ({all_chunks[0]['chunk_id']}):")
@@ -132,8 +160,8 @@ if __name__ == "__main__":
         
         # show_top_k("how much caffeine is in tea?") 
         # show_top_k("what is a latte?")  
-        QUERY = "what is a latte?"
-        top3 = retrieve(QUERY, all_chunks, k=3)
+        # QUERY = "what is a latte?"
+        # top3 = retrieve(QUERY, all_chunks, k=3)
         # for i, chunk in enumerate(top3, 1):
         #         print(f"  [{i}] {chunk['score']:.3f}  {chunk['chunk_id']:<25s} {chunk['text'][:60]}...")
         #         print(f"        {chunk['text']}\n")
@@ -205,18 +233,18 @@ if __name__ == "__main__":
         # print(f"A: {r['answer']}\n")
         # print(f"Sources retrieved: {r['sources']}")
         
-        r = ask_rag(
-                "Compare the caffeine content of black tea and green tea, and the water "
-                "temperatures used to brew them.",
-        all_chunks, k=3,
-        )
-        print(f"Q: {r['question']}\n")
-        print(f"A: {r['answer']}\n")
-        print(f"Sources retrieved: {r['sources']}\n")
-        print("Retrieved chunks (with content):\n")
-        for hit in retrieve(r['question'], all_chunks, k=3):
-                print(f"  [{hit['chunk_id']}] cosine={hit['score']:.3f}")
-                print(f"    {hit['text'][:120]}...\n")
+        # r = ask_rag(
+        #         "Compare the caffeine content of black tea and green tea, and the water "
+        #         "temperatures used to brew them.",
+        # all_chunks, k=3,
+        # )
+        # print(f"Q: {r['question']}\n")
+        # print(f"A: {r['answer']}\n")
+        # print(f"Sources retrieved: {r['sources']}\n")
+        # print("Retrieved chunks (with content):\n")
+        # for hit in retrieve(r['question'], all_chunks, k=3):
+        #         print(f"  [{hit['chunk_id']}] cosine={hit['score']:.3f}")
+        #         print(f"    {hit['text'][:120]}...\n")
         
         # all_chunks = []
         # for doc in documents:
@@ -258,3 +286,35 @@ if __name__ == "__main__":
         #         chunks = chunk_text(doc["text"])
         #         print(chunks)
         #         print("**************")
+        
+        
+        # for i, tq in enumerate(TEST_QUESTIONS, 1):
+        #     print(f"  Q{i} ({tq['difficulty']:6s}): {tq['q']}")
+        #     print(f"          ideal_source: {tq['ideal_source']}")
+            
+        # ##Building Indexes for experimentation 
+        # print("Building indexes at three chunk sizes...\n")
+        CORPUS = documents
+
+        # index_100 = build_index(chunk_documents(CORPUS, size=100, overlap=20))
+        index_200 = build_index(chunk_documents(CORPUS, size=200, overlap=40))
+        # index_400 = build_index(chunk_documents(CORPUS, size=400, overlap=80))
+
+        # print(f"  size=100: {len(index_100)} chunks")
+        # print(f"  size=200: {len(index_200)} chunks (Day 1 baseline)")
+        # print(f"  size=400: {len(index_400)} chunks")
+        
+        # for tq in TEST_QUESTIONS:
+        #     compare_chunk_sizes(tq["q"], tq["ideal_source"])
+        
+        MULTI_FACT_QUERY = ("Compare the water temperature and steeping time for green tea versus black tea.")
+        # Ideal answer needs BOTH tea_green AND tea_black chunks.
+
+        for k in [1, 3, 5, 7]:
+            result = ask_rag(MULTI_FACT_QUERY, index_200, k=k)
+            print(f"── K={k} ──")
+            print(f"  Sources: {result['sources']}")
+            print(f"  Cost:    ${cost_usd(result):.6f}")
+            print(f"  Tokens:  in={result['tokens_in']} out={result['tokens_out']}")
+            print(f"  Answer:  {result['answer']}\n")
+            

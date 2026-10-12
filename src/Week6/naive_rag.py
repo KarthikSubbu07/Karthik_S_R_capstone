@@ -117,6 +117,9 @@ def compare_chunk_sizes(question, ideal_source):
     """Retrieve top-3 from each index. Print sources."""
     print(f"\nQ: {question}")
     print(f"   ideal_source: {ideal_source}\n")
+    index_100 = build_index(chunk_documents(CORPUS, size=100, overlap=20))
+    index_200 = build_index(chunk_documents(CORPUS, size=200, overlap=40))
+    index_400 = build_index(chunk_documents(CORPUS, size=400, overlap=80))
     for label, idx in [("100", index_100), ("200", index_200), ("400", index_400)]:
         hits = retrieve(question, idx, k=3)
         source_ids = [h["source_id"] for h in hits]
@@ -296,9 +299,9 @@ if __name__ == "__main__":
         # print("Building indexes at three chunk sizes...\n")
         CORPUS = documents
 
-        # index_100 = build_index(chunk_documents(CORPUS, size=100, overlap=20))
+        index_100 = build_index(chunk_documents(CORPUS, size=100, overlap=20))
         index_200 = build_index(chunk_documents(CORPUS, size=200, overlap=40))
-        # index_400 = build_index(chunk_documents(CORPUS, size=400, overlap=80))
+        index_400 = build_index(chunk_documents(CORPUS, size=400, overlap=80))
 
         # print(f"  size=100: {len(index_100)} chunks")
         # print(f"  size=200: {len(index_200)} chunks (Day 1 baseline)")

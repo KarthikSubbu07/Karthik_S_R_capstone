@@ -1,0 +1,6 @@
+{"q": "what's error code AC-1042 about", "expected_id": "err_ac1042", "expected_winner": "BM25", "why": "exact error code AC-1042 \u2014 dense embeddings can miss alphanumeric IDs"}
+{"q": "how much does the enterprise plan cost", "expected_id": "price_enterprise", "expected_winner": "DENSE", "why": "synonym gap \u2014 user says 'cost', doc says 'volume-based pricing' / 'quote'"}
+{"q": "POST /v2/dashboards endpoint parameters", "expected_id": "api_dashboards", "expected_winner": "BM25", "why": "exact endpoint path \u2014 dense may generalise across all API docs"}
+{"q": "the queries in my report keep timing out", "expected_id": "err_ac1042", "expected_winner": "DENSE", "why": "conversational phrasing \u2014 user doesn't know the error code yet"}
+{"q": "how do I get notified when something breaks", "expected_id": "feat_alerts", "expected_winner": "DENSE", "why": "synonyms \u2014 'notified when something breaks' == alerts on threshold crossing"}
+{"q": "GET /v2/alerts pagination cursor", "expected_id": "api_alerts", "expected_winner": "BM25", "why": "exact endpoint + parameter name \u2014 BM25 exact-match territory"}

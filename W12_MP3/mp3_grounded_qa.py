@@ -56,7 +56,7 @@ from sentence_transformers import CrossEncoder
 
 CORPUS_DIR         = Path(__file__).parent / "corpus"
 DATA_DIR           = Path(__file__).parent / "data"
-COLLECTION_NAME    = "mp2_sherlock" #"mp3_sherlock"
+COLLECTION_NAME    = "mp3_sherlock"
 EMBEDDING_MODEL    = "text-embedding-3-small"
 EMBEDDING_DIM      = 1536
 CHAT_MODEL         = "gpt-4o-mini"
@@ -147,23 +147,75 @@ def chunk_document(doc: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def embed_texts(texts: list[str]) -> list[list[float]]:
-    print(texts[0])
     resp = oai.embeddings.create(model=EMBEDDING_MODEL, input=texts)
     return [d.embedding for d in resp.data]
 
 
 def setup_collection() -> None:
-    qdrant.recreate_collection(
-        collection_name=COLLECTION_NAME,
-        vectors_config=VectorParams(size=EMBEDDING_DIM, distance=Distance.COSINE),
+    """Create (or recreate) the Qdrant collection."""
+    qdrant = QdrantClient(
+    url=os.environ["QDRANT_URL"],
+    api_key=os.environ["QDRANT_API_KEY"]
     )
+    
+    # Create Collection
+    if qdrant.collection_exists(collection_name=COLLECTION_NAME):
+        qdrant.delete_collection(collection_name=COLLECTION_NAME)
+        
+    qdrant.create_collection(
+        collection_name=COLLECTION_NAME,
+        vectors_config={"dense-text": VectorParams(size=EMBEDDING_DIM, distance=Distance.COSINE)},
+        sparse_vectors_config={
+        "lexical-text": SparseVectorParams(
+            index=SparseIndexParams(on_disk=True)
+        )
+        }
+    )
+    
+    # Sanity check — list existing collections
+    existing = qdrant.get_collections()
+    print(f"Connected to Qdrant at {os.environ['QDRANT_URL'][:40]}...")
 
 
 def ingest_chunks(chunks: list[dict[str, Any]]) -> None:
-    vectors = embed_texts([c["text"] for c in chunks])
-    points = [PointStruct(id=str(uuid.uuid4()), vector=v, payload=c)
-              for c, v in zip(chunks, vectors)]
+    """Embed every chunk and upsert into Qdrant.
+    
+        TODO:
+          - Call embed_texts on the chunk texts
+          - Build PointStruct objects (id=uuid, vector, payload=chunk dict)
+          - qdrant.upsert
+        """
+        
+    vectors = embed_texts([chunk["text"] for chunk in chunks])
+    print(len(vectors))
+    sparse_vectors = list(bm25_model.embed([chunk["text"] for chunk in chunks]))
+    print(len(sparse_vectors))
+    
+    for chunk, vec, sparse in zip(chunks, vectors, sparse_vectors):
+        chunk["vector"] = vec
+        chunk["sparse_vector"] = SparseVector(
+        indices=sparse.indices.tolist(),
+        values=sparse.values.tolist()
+    )
+        chunk["id"] = str(uuid.uuid4())
+        # print(chunk["sparse_vector"])
+        
+    points = [
+        PointStruct(
+            id=chunk["id"],
+            vector={
+                "dense-text": chunk["vector"],
+                "lexical-text": chunk["sparse_vector"]},
+            payload=chunk,
+        )
+        for chunk in chunks
+    ]
     qdrant.upsert(collection_name=COLLECTION_NAME, points=points)
+    print(f"Upserted {len(points)} points into Qdrant collection '{COLLECTION_NAME}'.")
+    # vectors = embed_texts([c["text"] for c in chunks])
+    # points = [PointStruct(id=str(uuid.uuid4()), vector=v, payload=c)
+    #           for c, v in zip(chunks, vectors)]
+    # qdrant.upsert(collection_name=COLLECTION_NAME, points=points)
 
 
 # def retrieve(query: str, k: int = 3) -> list[dict[str, Any]]:
@@ -290,9 +342,8 @@ use any outside knowledge."""
 def answer(question: str, k: int = 5, threshold: float = RETRIEVAL_THRESHOLD) -> dict[str, Any]:
     """Retrieve → (abstain?) → cite-formatted generation → validate citations."""
     t0 = time.time()
-    chunks = rerank(question, retrieve(question, k=k*k), top_k=k)
-    # chunks = retrieve(question, k=k)
-    retrieved_sources = [{"source": c["source"], "score": c.get("score", 0.0)} for c in chunks]
+    chunks = rerank(question, retrieve(question, k=k*k), top_k=k)    
+    retrieved_sources =  [{"source": c["source"].split("/")[-1], "section": c["section"]} for c in chunks]
     
     if should_abstain(chunks, threshold):
         return {"question": question, "answer": ABSTAIN_MESSAGE, "citations": [],
@@ -301,14 +352,12 @@ def answer(question: str, k: int = 5, threshold: float = RETRIEVAL_THRESHOLD) ->
                 "latency_ms": int((time.time() - t0) * 1000)}
 
     context, sources = format_context(chunks)
-    print(context)
     resp = oai.chat.completions.create(
         model=CHAT_MODEL, temperature=0,
         messages=[{"role": "system", "content": SYSTEM_PROMPT},
                   {"role": "user", "content": f"Excerpts:\n{context}\n\nQuestion: {question}"}],
     )
     text = resp.choices[0].message.content.strip()
-    print(text)
 
     # A model can ignore instructions and abstain in prose — respect that.
     if ABSTAIN_MESSAGE.lower() in text.lower():
@@ -319,7 +368,6 @@ def answer(question: str, k: int = 5, threshold: float = RETRIEVAL_THRESHOLD) ->
 
     check = validate_citations(text, len(sources))
     cited = [s for s in sources if s["n"] in check["used"]]
-    print(cited)
     return {"question": question, "answer": text, "citations": cited,
             "retrieved_sources": retrieved_sources, "abstained": False,
             "citation_check": check, "latency_ms": int((time.time() - t0) * 1000)}
@@ -340,48 +388,55 @@ def evaluate(questions: list[dict[str, Any]],
       - hallucination rate     : should-abstain Qs the assistant answered anyway
     """
     rows = []
+    n_answerable = 0
+    n_abstain = 0
+    retrieval_hit_rate = 0
+    grounded_rate = 0
+    abstention_accuracy = 0
+    hallucination_rate = 0
     for q in questions:
         r = answer_fn(q["question"])
-        print(r)
         if q.get("should_abstain") or q.get("expected_source") in (None, "", "ABSTAIN"):
+            n_abstain += 1
             if r["abstained"]:
-                # Correctly abstained
-                pass
-            else:
-                # Incorrectly answered
-                pass
-            # Handle should-abstain question
-            pass
+                abstention_accuracy += 1
+            rows.append({
+                "id": q.get("id"),
+                "type": "should-abstain",
+                "hit": False,
+                "abstained": r["abstained"],
+                "grounded": False, 
+                "ok": r["abstained"]
+            })
+            if not r["abstained"]:
+                hallucination_rate += 1
+
         else:
-            # Handle answerable question
-            pass
-        
-        
-    # TODO (evaluation): score the assistant over `questions`.
-    #
-    # For each question q, call r = answer_fn(q["question"]).
-    #   A question is "should-abstain" if:
-    #       q.get("should_abstain")  OR  q.get("expected_source") in (None, "", "ABSTAIN")
-    #   Otherwise it is "answerable" and has a real q["expected_source"].
-    #
-    # Over ANSWERABLE questions, track:
-    #   hits      → q["expected_source"] appears in the sources of r["retrieved_sources"]
-    #               (this is the retrieval hit rate)
-    #   grounded  → (not r["abstained"]) AND r["citation_check"]["has_citation"]
-    #               AND not r["citation_check"]["invalid"]
-    #               AND q["expected_source"] is among {c["source"] for c in r["citations"]}
-    #
-    # Over SHOULD-ABSTAIN questions, track:
-    #   abst_ok       → r["abstained"] is True   (abstention accuracy)
-    #   hallucinated  → r["abstained"] is False  (hallucination rate)
-    #
-    # Append a per-question dict to `rows` (see format_eval_table for the keys it
-    # renders: id, type, hit, abstained, grounded, ok) and return:
-    #   {"rows": rows, "summary": {
-    #       "n_answerable", "n_abstain",
-    #       "retrieval_hit_rate", "grounded_rate",
-    #       "abstention_accuracy", "hallucination_rate"}}
-    raise NotImplementedError("Implement evaluate")
+            sources = {item["source"] for item in r["retrieved_sources"]}
+            if q["expected_source"] in sources:
+                retrieval_hit_rate += 1
+            n_answerable += 1
+            if not r["abstained"] and r["citation_check"]["has_citation"] and not r["citation_check"]["invalid"] and q["expected_source"] in {c["source"] for c in r["citations"]}:
+                grounded_rate += 1
+            rows.append({
+                "id": q.get("id"),
+                "type": "answerable",
+                "hit": q["expected_source"] in sources,
+                "abstained": r["abstained"],
+                "grounded": not r["abstained"] and r["citation_check"]["has_citation"] and not r["citation_check"]["invalid"] and q["expected_source"] in {c["source"] for c in r["citations"]},
+                "ok": not r["abstained"] and r["citation_check"]["has_citation"] and not r["citation_check"]["invalid"] and q["expected_source"] in {c["source"] for c in r["citations"]}
+            })
+    return {
+        "rows": rows,
+        "summary": {
+            "n_answerable": n_answerable,
+            "n_abstain": n_abstain,
+            "retrieval_hit_rate": retrieval_hit_rate / n_answerable if n_answerable > 0 else 0,
+            "grounded_rate": grounded_rate / n_answerable if n_answerable > 0 else 0,
+            "abstention_accuracy": abstention_accuracy / n_abstain if n_abstain > 0 else 0,
+            "hallucination_rate": hallucination_rate / n_abstain if n_abstain > 0 else 0
+        }
+    }        
 
 
 def format_eval_table(result: dict[str, Any]) -> str:
@@ -389,17 +444,17 @@ def format_eval_table(result: dict[str, Any]) -> str:
     def cell(v):
         return {True: "✓", False: "✗"}.get(v, str(v))
 
-    lines = ["", "  id                              type     hit   abstained  grounded  ok",
+    lines = ["", "  id                              type               hit   abstained  grounded  ok",
              "  " + "-" * 74]
     for r in result["rows"]:
-        lines.append(f"  {r['id']:<31} {r['type']:<8} {cell(r['hit']):<5} "
+        lines.append(f"  {r['id']:<31} {r['type']:<18} {cell(r['hit']):<5} "
                      f"{cell(r['abstained']):<10} {cell(r['grounded']):<9} {cell(r['ok'])}")
     s = result["summary"]
     lines += [
         "  " + "-" * 74, "",
         f"  Retrieval hit rate    : {s['retrieval_hit_rate']}   "
         f"({s['n_answerable']} answerable questions)",
-        f"  Grounded & cited rate : {s['grounded_rate']}   (KPI: grounded response rate)",
+        f"  Grounded & cited rate : {round(s['grounded_rate'],3)}   (KPI: grounded response rate)",
         f"  Abstention accuracy   : {s['abstention_accuracy']}   "
         f"({s['n_abstain']} should-abstain questions)",
         f"  Hallucination rate    : {s['hallucination_rate']}   (KPI: hallucination rate)",
@@ -528,7 +583,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    # main()
-    q = "What killed Julia Stoner at Stoke Moran, and how was the method discovered?"
-    # q = "Who was the assistant working at Jabez Wilson's pawnshop, and what was his real identity?"
-    answer(q, 5)
+    main()
